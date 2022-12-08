@@ -90,100 +90,98 @@ public class InsuranceFinanceManagerProcessRequest extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 6, -1, -1));
 
-        jPanel2.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(188, 188, 188));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("INSURANCE FINANCE REQUESTS");
 
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(188, 188, 188));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("You can manage request below.");
 
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(188, 188, 188));
         jLabel8.setText("Policy Number :");
 
         txtPolicyNumber.setEditable(false);
-        txtPolicyNumber.setBackground(new java.awt.Color(22, 27, 34));
+        txtPolicyNumber.setBackground(new java.awt.Color(255, 255, 255));
         txtPolicyNumber.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtPolicyNumber.setForeground(new java.awt.Color(188, 188, 188));
+        txtPolicyNumber.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         txtPolicyNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPolicyNumberActionPerformed(evt);
             }
         });
 
+        jLabel16.setBackground(new java.awt.Color(255, 255, 255));
         jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(188, 188, 188));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel16.setText("SSN :");
 
         txtSSN.setEditable(false);
-        txtSSN.setBackground(new java.awt.Color(22, 27, 34));
+        txtSSN.setBackground(new java.awt.Color(255, 255, 255));
         txtSSN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtSSN.setForeground(new java.awt.Color(188, 188, 188));
+        txtSSN.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
+        jLabel17.setBackground(new java.awt.Color(255, 255, 255));
         jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(188, 188, 188));
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel17.setText("Coverage(%) :");
 
         txtCoverage.setEditable(false);
-        txtCoverage.setBackground(new java.awt.Color(22, 27, 34));
+        txtCoverage.setBackground(new java.awt.Color(255, 255, 255));
         txtCoverage.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtCoverage.setForeground(new java.awt.Color(188, 188, 188));
+        txtCoverage.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
+        jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(188, 188, 188));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel18.setText("Policy Name :");
 
         txtPolicyName.setEditable(false);
-        txtPolicyName.setBackground(new java.awt.Color(22, 27, 34));
+        txtPolicyName.setBackground(new java.awt.Color(255, 255, 255));
         txtPolicyName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtPolicyName.setForeground(new java.awt.Color(188, 188, 188));
+        txtPolicyName.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
+        jLabel19.setBackground(new java.awt.Color(255, 255, 255));
         jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(188, 188, 188));
         jLabel19.setText("Billing Amount($) :");
 
         txtBillingAmount.setEditable(false);
-        txtBillingAmount.setBackground(new java.awt.Color(22, 27, 34));
+        txtBillingAmount.setBackground(new java.awt.Color(255, 255, 255));
         txtBillingAmount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtBillingAmount.setForeground(new java.awt.Color(188, 188, 188));
+        txtBillingAmount.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
+        jLabel13.setBackground(new java.awt.Color(255, 255, 255));
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(188, 188, 188));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel13.setText("Claim Amount($) :");
 
         txtClaimAmount.setEditable(false);
-        txtClaimAmount.setBackground(new java.awt.Color(22, 27, 34));
+        txtClaimAmount.setBackground(new java.awt.Color(255, 255, 255));
         txtClaimAmount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtClaimAmount.setForeground(new java.awt.Color(188, 188, 188));
+        txtClaimAmount.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         txtClaimAmount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtClaimAmountActionPerformed(evt);
             }
         });
 
-        btnDisburse.setBackground(new java.awt.Color(22, 27, 34));
         btnDisburse.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnDisburse.setForeground(new java.awt.Color(188, 188, 188));
         btnDisburse.setText("Disburse Amount");
+        btnDisburse.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         btnDisburse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDisburseActionPerformed(evt);
             }
         });
 
-        btnReject.setBackground(new java.awt.Color(22, 27, 34));
         btnReject.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnReject.setForeground(new java.awt.Color(188, 188, 188));
         btnReject.setText("Reject Claim");
+        btnReject.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);

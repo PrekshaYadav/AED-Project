@@ -73,25 +73,23 @@ public class InsuranceBrokerWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 6, 410, -1));
 
-        jPanel1.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(188, 188, 188));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("BROKER TASKS");
 
+        enterpriseLabel.setBackground(new java.awt.Color(255, 255, 255));
         enterpriseLabel.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(188, 188, 188));
         enterpriseLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         enterpriseLabel.setText("Enterprise :");
 
+        valueLabel.setBackground(new java.awt.Color(255, 255, 255));
         valueLabel.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        valueLabel.setForeground(new java.awt.Color(188, 188, 188));
         valueLabel.setText("<value>");
 
-        btnAddNewUser.setBackground(new java.awt.Color(22, 27, 34));
         btnAddNewUser.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnAddNewUser.setForeground(new java.awt.Color(188, 188, 188));
         btnAddNewUser.setText("Add New Customer");
         btnAddNewUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,9 +97,7 @@ public class InsuranceBrokerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnProcessInsuranceRequests.setBackground(new java.awt.Color(22, 27, 34));
         btnProcessInsuranceRequests.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnProcessInsuranceRequests.setForeground(new java.awt.Color(188, 188, 188));
         btnProcessInsuranceRequests.setText("Process Insurance Requests");
         btnProcessInsuranceRequests.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,8 +105,8 @@ public class InsuranceBrokerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(188, 188, 188));
         jLabel7.setText("You can perform the below tasks.");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

@@ -64,9 +64,7 @@ public class InsuranceFinanceManagerWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(207, 207, 207));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblFinance.setBackground(new java.awt.Color(13, 17, 23));
         tblFinance.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        tblFinance.setForeground(new java.awt.Color(188, 188, 188));
         tblFinance.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 

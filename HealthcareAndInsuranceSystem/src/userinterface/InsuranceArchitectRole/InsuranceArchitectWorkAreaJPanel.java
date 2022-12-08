@@ -110,16 +110,13 @@ public class InsuranceArchitectWorkAreaJPanel extends javax.swing.JPanel {
         jLabel5.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 6, 410, -1));
 
-        jPanel2.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(188, 188, 188));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("MANAGE POLICIES");
 
-        btnCreatePolicy.setBackground(new java.awt.Color(22, 27, 34));
         btnCreatePolicy.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnCreatePolicy.setForeground(new java.awt.Color(188, 188, 188));
         btnCreatePolicy.setText("Create Policy");
         btnCreatePolicy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,17 +125,13 @@ public class InsuranceArchitectWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         enterpriseLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        enterpriseLabel1.setForeground(new java.awt.Color(188, 188, 188));
         enterpriseLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         enterpriseLabel1.setText("Enterprise :");
 
         valueLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        valueLabel1.setForeground(new java.awt.Color(188, 188, 188));
         valueLabel1.setText("<value>");
 
-        btnDeletePolicy.setBackground(new java.awt.Color(22, 27, 34));
         btnDeletePolicy.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnDeletePolicy.setForeground(new java.awt.Color(188, 188, 188));
         btnDeletePolicy.setText("Delete Policy");
         btnDeletePolicy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,9 +139,7 @@ public class InsuranceArchitectWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        tblPolicies.setBackground(new java.awt.Color(22, 27, 34));
         tblPolicies.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        tblPolicies.setForeground(new java.awt.Color(188, 188, 188));
         tblPolicies.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -171,39 +162,32 @@ public class InsuranceArchitectWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblPolicies);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(188, 188, 188));
         jLabel11.setText("Policy Name :");
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(188, 188, 188));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel16.setText("Policy Coverage(%) :");
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(188, 188, 188));
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel17.setText("Monthly Premium($) :");
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(188, 188, 188));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel18.setText("Policy T&C :");
 
-        txtPolicyName.setBackground(new java.awt.Color(22, 27, 34));
         txtPolicyName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtPolicyName.setForeground(new java.awt.Color(188, 188, 188));
+        txtPolicyName.setToolTipText("");
+        txtPolicyName.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        txtPolicyCoverage.setBackground(new java.awt.Color(22, 27, 34));
         txtPolicyCoverage.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtPolicyCoverage.setForeground(new java.awt.Color(188, 188, 188));
+        txtPolicyCoverage.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        txtMonthlyPrem.setBackground(new java.awt.Color(22, 27, 34));
         txtMonthlyPrem.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtMonthlyPrem.setForeground(new java.awt.Color(188, 188, 188));
+        txtMonthlyPrem.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        txtPolicyTC.setBackground(new java.awt.Color(22, 27, 34));
         txtPolicyTC.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtPolicyTC.setForeground(new java.awt.Color(188, 188, 188));
+        txtPolicyTC.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

@@ -124,17 +124,15 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         jLabel12.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 6, 400, -1));
 
-        jPanel1.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel17.setBackground(new java.awt.Color(255, 255, 255));
         jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(188, 188, 188));
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("ADD CUSTOMERS");
 
-        tblCustomer.setBackground(new java.awt.Color(22, 27, 34));
         tblCustomer.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblCustomer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        tblCustomer.setForeground(new java.awt.Color(188, 188, 188));
         tblCustomer.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -153,68 +151,55 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblCustomer);
 
+        jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(188, 188, 188));
         jLabel18.setText("First Name :");
 
+        jLabel16.setBackground(new java.awt.Color(255, 255, 255));
         jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(188, 188, 188));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel16.setText("Last Name :");
 
+        jLabel19.setBackground(new java.awt.Color(255, 255, 255));
         jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(188, 188, 188));
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel19.setText("Date of Birth :");
 
+        jLabel20.setBackground(new java.awt.Color(255, 255, 255));
         jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(188, 188, 188));
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel20.setText("Phone Number :");
 
-        txtFirstName.setBackground(new java.awt.Color(22, 27, 34));
         txtFirstName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtFirstName.setForeground(new java.awt.Color(188, 188, 188));
 
-        txtLastName.setBackground(new java.awt.Color(22, 27, 34));
         txtLastName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtLastName.setForeground(new java.awt.Color(188, 188, 188));
 
         jDateChooserDob.setBackground(new java.awt.Color(22, 27, 34));
-        jDateChooserDob.setForeground(new java.awt.Color(188, 188, 188));
         jDateChooserDob.setMaxSelectableDate(Calendar.getInstance().getTime());
 
-        txtPhone.setBackground(new java.awt.Color(22, 27, 34));
         txtPhone.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtPhone.setForeground(new java.awt.Color(188, 188, 188));
 
+        jLabel21.setBackground(new java.awt.Color(255, 255, 255));
         jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(188, 188, 188));
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel21.setText("SSN :");
 
-        txtSSN.setBackground(new java.awt.Color(22, 27, 34));
         txtSSN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtSSN.setForeground(new java.awt.Color(188, 188, 188));
 
+        jLabel22.setBackground(new java.awt.Color(255, 255, 255));
         jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(188, 188, 188));
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel22.setText("Gender :");
 
-        cmbGender.setBackground(new java.awt.Color(22, 27, 34));
         cmbGender.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cmbGender.setForeground(new java.awt.Color(188, 188, 188));
         cmbGender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Female", "Male", "Other" }));
 
+        jLabel24.setBackground(new java.awt.Color(255, 255, 255));
         jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(188, 188, 188));
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel24.setText("Policy Name :");
 
-        cmbInsuranceName.setBackground(new java.awt.Color(22, 27, 34));
         cmbInsuranceName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cmbInsuranceName.setForeground(new java.awt.Color(188, 188, 188));
         cmbInsuranceName.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 cmbInsuranceNameFocusGained(evt);
@@ -226,9 +211,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnAddCustomer.setBackground(new java.awt.Color(22, 27, 34));
         btnAddCustomer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnAddCustomer.setForeground(new java.awt.Color(188, 188, 188));
         btnAddCustomer.setText("Add Customer");
         btnAddCustomer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -236,41 +219,33 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel25.setBackground(new java.awt.Color(255, 255, 255));
         jLabel25.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(188, 188, 188));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel25.setText("Address :");
 
-        txtAddress.setBackground(new java.awt.Color(22, 27, 34));
         txtAddress.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtAddress.setForeground(new java.awt.Color(188, 188, 188));
 
+        jLabel26.setBackground(new java.awt.Color(255, 255, 255));
         jLabel26.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(188, 188, 188));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel26.setText("Email :");
 
-        txtEmail.setBackground(new java.awt.Color(22, 27, 34));
         txtEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtEmail.setForeground(new java.awt.Color(188, 188, 188));
 
-        txtPolicyNumber.setBackground(new java.awt.Color(22, 27, 34));
         txtPolicyNumber.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtPolicyNumber.setForeground(new java.awt.Color(188, 188, 188));
 
+        jLabel23.setBackground(new java.awt.Color(255, 255, 255));
         jLabel23.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(188, 188, 188));
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel23.setText("Policy Number :");
 
+        jLabel27.setBackground(new java.awt.Color(255, 255, 255));
         jLabel27.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(188, 188, 188));
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel27.setText("Policy Coverage(%) :");
 
-        txtInsuranceCoverage.setBackground(new java.awt.Color(22, 27, 34));
         txtInsuranceCoverage.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtInsuranceCoverage.setForeground(new java.awt.Color(188, 188, 188));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

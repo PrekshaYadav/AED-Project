@@ -54,8 +54,6 @@ public class AllInsuranceRequestsJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(207, 207, 207));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblInsuranceWorkTable.setBackground(new java.awt.Color(13, 17, 23));
-        tblInsuranceWorkTable.setForeground(new java.awt.Color(188, 188, 188));
         tblInsuranceWorkTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
