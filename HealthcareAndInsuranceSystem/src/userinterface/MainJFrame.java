@@ -71,12 +71,12 @@ public class MainJFrame extends javax.swing.JFrame {
         jSplitPane1.setDividerSize(-1);
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel1.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 102));
         jPanel1.setMinimumSize(new java.awt.Dimension(1200, 58));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Light", 0, 30)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(188, 188, 188));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("HEALTH AND INSURANCE MANAGEMENT SYSTEM");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 689, 52));
 
@@ -95,7 +95,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setTopComponent(jPanel1);
 
-        container.setBackground(new java.awt.Color(13, 17, 23));
+        container.setBackground(new java.awt.Color(204, 204, 255));
         container.setLayout(new java.awt.CardLayout());
         jSplitPane1.setRightComponent(container);
 

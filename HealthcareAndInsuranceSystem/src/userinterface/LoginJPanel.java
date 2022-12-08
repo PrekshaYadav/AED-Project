@@ -49,7 +49,6 @@ public class LoginJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -61,26 +60,10 @@ public class LoginJPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(13, 17, 23));
+        setBackground(new java.awt.Color(0, 0, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("<> with ♡ by Team Batman");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel1MouseExited(evt);
-            }
-        });
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 695, 290, 40));
 
         jPanel1.setBackground(new java.awt.Color(22, 27, 34));
         jPanel1.setForeground(new java.awt.Color(188, 188, 188));
@@ -195,22 +178,16 @@ public class LoginJPanel extends javax.swing.JPanel {
                 .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(loginJButton)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(172, Short.MAX_VALUE))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {passwordField, userNameJTextField});
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 102, -1, -1));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 80, -1, 560));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/loginphoto.png"))); // NOI18N
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 0, 380, 760));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/loginphoto.png"))); // NOI18N
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-500, 0, 880, 760));
-
-        jLabel10.setFont(new java.awt.Font("Segoe Script", 1, 10)); // NOI18N
-        jLabel10.setText("madgi");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 130, 50, 20));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/loginphoto.jpg"))); // NOI18N
+        jLabel9.setFocusable(false);
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, -60, 810, 840));
     }// </editor-fold>//GEN-END:initComponents
 
     private void userNameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameJTextFieldActionPerformed
@@ -298,20 +275,6 @@ public class LoginJPanel extends javax.swing.JPanel {
         
     }//GEN-LAST:event_loginJButtonMouseExited
 
-    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
-        // TODO add your handling code here:
-        
-        jLabel1.setFont(new Font(jLabel1.getFont().getName(),Font.PLAIN,19));
-        
-    }//GEN-LAST:event_jLabel1MouseEntered
-
-    private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
-        // TODO add your handling code here:
-        
-        jLabel1.setFont(new Font(jLabel1.getFont().getName(),Font.PLAIN,18));
-        
-    }//GEN-LAST:event_jLabel1MouseExited
-
     private void loginJButtonFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_loginJButtonFocusGained
         // TODO add your handling code here:
         loginJButton.setForeground(new Color(255,255,255));
@@ -326,15 +289,12 @@ public class LoginJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
