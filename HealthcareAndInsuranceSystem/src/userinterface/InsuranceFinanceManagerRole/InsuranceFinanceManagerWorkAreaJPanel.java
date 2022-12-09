@@ -87,7 +87,6 @@ public class InsuranceFinanceManagerWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel4.setText("INSURANCE FINANCE WORK AREA");
-        jLabel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 6, 400, -1));
 
         btnLogoutPatient.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N

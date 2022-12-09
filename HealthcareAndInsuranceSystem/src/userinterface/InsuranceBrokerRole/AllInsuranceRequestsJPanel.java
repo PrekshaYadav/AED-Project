@@ -92,14 +92,6 @@ public class AllInsuranceRequestsJPanel extends javax.swing.JPanel {
 
         backJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         backJButton.setText("Back");
-        backJButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                backJButtonMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                backJButtonMouseExited(evt);
-            }
-        });
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
@@ -119,14 +111,6 @@ public class AllInsuranceRequestsJPanel extends javax.swing.JPanel {
 
         btnProcessRequest.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnProcessRequest.setText("Process Request");
-        btnProcessRequest.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnProcessRequestMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnProcessRequestMouseExited(evt);
-            }
-        });
         btnProcessRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProcessRequestActionPerformed(evt);
@@ -136,14 +120,6 @@ public class AllInsuranceRequestsJPanel extends javax.swing.JPanel {
 
         btnAssign.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnAssign.setText("Assign to Me");
-        btnAssign.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAssignMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAssignMouseExited(evt);
-            }
-        });
         btnAssign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAssignActionPerformed(evt);
@@ -152,36 +128,12 @@ public class AllInsuranceRequestsJPanel extends javax.swing.JPanel {
         add(btnAssign, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 550, 157, 32));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseEntered
-        // TODO add your handling code here:
-        backJButton.setForeground(new Color(0,0,0));
-        backJButton.setBackground(new Color(144,202,249));
-    }//GEN-LAST:event_backJButtonMouseEntered
-
-    private void backJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseExited
-        // TODO add your handling code here:
-        backJButton.setForeground(new Color(188,188,188));
-        backJButton.setBackground(new Color(13,17,23));
-    }//GEN-LAST:event_backJButtonMouseExited
-
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
 
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
-
-    private void btnProcessRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProcessRequestMouseEntered
-        // TODO add your handling code here:
-        btnProcessRequest.setForeground(new Color(0,0,0));
-        btnProcessRequest.setBackground(new Color(144,202,249));
-    }//GEN-LAST:event_btnProcessRequestMouseEntered
-
-    private void btnProcessRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProcessRequestMouseExited
-        // TODO add your handling code here:
-        btnProcessRequest.setForeground(new Color(188,188,188));
-        btnProcessRequest.setBackground(new Color(13,17,23));
-    }//GEN-LAST:event_btnProcessRequestMouseExited
 
     private void btnProcessRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcessRequestActionPerformed
         // TODO add your handling code here:
@@ -228,18 +180,6 @@ public class AllInsuranceRequestsJPanel extends javax.swing.JPanel {
         }
 
     }//GEN-LAST:event_btnProcessRequestActionPerformed
-
-    private void btnAssignMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignMouseEntered
-        // TODO add your handling code here:
-        btnAssign.setForeground(new Color(0,0,0));
-        btnAssign.setBackground(new Color(144,202,249));
-    }//GEN-LAST:event_btnAssignMouseEntered
-
-    private void btnAssignMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignMouseExited
-        // TODO add your handling code here:
-        btnAssign.setForeground(new Color(188,188,188));
-        btnAssign.setBackground(new Color(13,17,23));
-    }//GEN-LAST:event_btnAssignMouseExited
 
     private void btnAssignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignActionPerformed
 

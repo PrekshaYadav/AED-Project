@@ -131,7 +131,6 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("ADD CUSTOMERS");
 
-        tblCustomer.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblCustomer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         tblCustomer.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -174,7 +173,8 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
 
         txtLastName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jDateChooserDob.setBackground(new java.awt.Color(22, 27, 34));
+        jDateChooserDob.setBackground(new java.awt.Color(255, 255, 255));
+        jDateChooserDob.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jDateChooserDob.setMaxSelectableDate(Calendar.getInstance().getTime());
 
         txtPhone.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
