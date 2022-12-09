@@ -16,7 +16,7 @@ import userinterface.HealthcareAuditorRole.AuditorWorkAreaJPanel;
 
 /**
  *
- * @author Sumit
+ * 
  */
 public class GovernmentHealthAuditorRole extends Role {
 

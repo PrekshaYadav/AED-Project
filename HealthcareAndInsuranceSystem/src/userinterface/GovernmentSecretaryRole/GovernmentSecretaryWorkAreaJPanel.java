@@ -24,7 +24,7 @@ import userinterface.LoginJPanel;
 
 /**
  *
- 
+ *
  */
 public class GovernmentSecretaryWorkAreaJPanel extends javax.swing.JPanel {
 

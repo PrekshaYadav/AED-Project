@@ -21,7 +21,7 @@ import userinterface.DoctorRole.DoctorWorkAreaJPanel;
 
 /**
  *
- 
+ *
  */
 public class GovernmentSecretaryProcessWorkRequestJPanel extends javax.swing.JPanel {
 
