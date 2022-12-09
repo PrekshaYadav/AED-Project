@@ -12,10 +12,7 @@ import Business.UserAccount.UserAccount;
 import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Sumit
- */
+
 public class SystemAdminRole extends Role {
 
     @Override

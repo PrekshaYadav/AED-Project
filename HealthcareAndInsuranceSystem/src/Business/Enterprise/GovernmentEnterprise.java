@@ -10,10 +10,7 @@ import Business.Role.Role;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Sumit
- */
+
 public class GovernmentEnterprise extends Enterprise {
 
     public GovernmentEnterprise(String name) {

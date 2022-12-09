@@ -14,10 +14,7 @@ import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.PharmacistRole.PharmacistWorkAreaJPanel;
 
-/**
- *
- * @author Sumit
- */
+
 public class PharmacistRole extends Role {
 
     @Override

@@ -14,10 +14,7 @@ import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.InsuranceBrokerRole.InsuranceBrokerWorkAreaJPanel;
 
-/**
- *
- * @author Sumit
- */
+
 public class InsuranceBrokerRole extends Role {
 
     @Override

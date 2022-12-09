@@ -10,10 +10,7 @@ import Business.Role.DeliveryManRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public class DeliveryManOrganization extends Organization{
     
     private DeliveryManDirectory deliveryManDirectory;

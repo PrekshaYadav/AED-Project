@@ -9,10 +9,7 @@ import Business.Role.InsuranceFinanceManagerRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public class InsuranceFinanceTeamOrganization extends Organization {
 
     public InsuranceFinanceTeamOrganization() {

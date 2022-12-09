@@ -12,10 +12,7 @@ import Business.Role.Role;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Sumit
- */
+
 public class InsuranceEnterprise extends Enterprise {
 
     private InsuranceCustomerDirectory insuranceCustomerDirectory;

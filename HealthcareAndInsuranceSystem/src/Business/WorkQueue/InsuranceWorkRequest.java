@@ -7,10 +7,7 @@ package Business.WorkQueue;
 
 import Business.InsuranceCustomer.InsuranceCustomer;
 
-/**
- *
- * @author Sumit
- */
+
 public class InsuranceWorkRequest extends WorkRequest {
 
     private String policyNumber;

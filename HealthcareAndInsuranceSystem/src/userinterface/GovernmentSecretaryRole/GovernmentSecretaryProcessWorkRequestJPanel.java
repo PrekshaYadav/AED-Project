@@ -364,26 +364,26 @@ public class GovernmentSecretaryProcessWorkRequestJPanel extends javax.swing.JPa
 
     private void btnRejectFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnRejectFocusGained
         // TODO add your handling code here:
-        sendRequestToTreasurerBtn.setForeground(new Color(255, 255, 255));
-        sendRequestToTreasurerBtn.setBackground(new Color(144, 202, 249));
+//        sendRequestToTreasurerBtn.setForeground(new Color(255, 255, 255));
+//        sendRequestToTreasurerBtn.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnRejectFocusGained
 
     private void btnRejectFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnRejectFocusLost
         // TODO add your handling code here:
-        sendRequestToTreasurerBtn.setForeground(new Color(188, 188, 188));
-        sendRequestToTreasurerBtn.setBackground(new Color(13, 17, 23));
+//        sendRequestToTreasurerBtn.setForeground(new Color(188, 188, 188));
+//        sendRequestToTreasurerBtn.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnRejectFocusLost
 
     private void btnRejectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRejectMouseEntered
         // TODO add your handling code here:
-        sendRequestToTreasurerBtn.setForeground(new Color(255, 255, 255));
-        sendRequestToTreasurerBtn.setBackground(new Color(144, 202, 249));
+//        sendRequestToTreasurerBtn.setForeground(new Color(255, 255, 255));
+//        sendRequestToTreasurerBtn.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnRejectMouseEntered
 
     private void btnRejectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRejectMouseExited
         // TODO add your handling code here:
-        sendRequestToTreasurerBtn.setForeground(new Color(188, 188, 188));
-        sendRequestToTreasurerBtn.setBackground(new Color(13, 17, 23));
+//        sendRequestToTreasurerBtn.setForeground(new Color(188, 188, 188));
+//        sendRequestToTreasurerBtn.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnRejectMouseExited
 
     private void btnRejectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRejectActionPerformed

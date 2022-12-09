@@ -122,13 +122,11 @@ public class GovernmentTreasurerWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 6, 430, -1));
 
         enterpriseLabel2.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        enterpriseLabel2.setForeground(new java.awt.Color(188, 188, 188));
         enterpriseLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         enterpriseLabel2.setText("Enterprise :");
         add(enterpriseLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, -1));
 
         valueLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        valueLabel1.setForeground(new java.awt.Color(188, 188, 188));
         valueLabel1.setText("<value>");
         add(valueLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, -1, -1));
 

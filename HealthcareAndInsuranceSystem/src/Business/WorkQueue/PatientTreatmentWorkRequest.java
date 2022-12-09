@@ -8,10 +8,7 @@ package Business.WorkQueue;
 import Business.Patient.Patient;
 import Business.UserAccount.UserAccount;
 
-/**
- *
- * @author Sumit
- */
+
 public class PatientTreatmentWorkRequest extends WorkRequest {
 
     private String registrationDate;

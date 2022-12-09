@@ -5,10 +5,7 @@
  */
 package Business.Delivery;
 
-/**
- *
- * @author Sumit
- */
+
 public class DeliveryMan {
     
     private String deliveryManName;

@@ -7,10 +7,7 @@ package Business.Employee;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author priyankachaudhari
- */
+
 public class EmployeeDirectory {
 
     private ArrayList<Employee> employeeList;

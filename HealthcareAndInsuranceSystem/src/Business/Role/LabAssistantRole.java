@@ -12,10 +12,7 @@ import Business.UserAccount.UserAccount;
 import userinterface.LabAssistantRole.LabAssistantWorkAreaJPanel;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Sumit
- */
+
 public class LabAssistantRole extends Role {
 
     @Override

@@ -13,10 +13,7 @@ import Business.UserAccount.UserAccount;
 import userinterface.DoctorRole.DoctorWorkAreaJPanel;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Sumit
- */
+
 public class DoctorRole extends Role {
 
     @Override
