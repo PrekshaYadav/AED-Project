@@ -6,7 +6,7 @@ package healthcareandinsurancesystem;
 
 /**
  *
- * @author preks
+ * 
  */
 public class HealthcareAndInsuranceSystem {
 
