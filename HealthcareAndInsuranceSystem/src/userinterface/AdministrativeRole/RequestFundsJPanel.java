@@ -178,6 +178,7 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         });
 
         txtLocation.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtLocation.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         txtLocation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtLocationActionPerformed(evt);
@@ -189,6 +190,7 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         jLabel11.setText("Population :");
 
         txtpopulation.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtpopulation.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         txtpopulation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtpopulationActionPerformed(evt);
@@ -200,6 +202,7 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         jLabel12.setText("Amount($) :");
 
         txtAmount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtAmount.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         txtAmount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAmountActionPerformed(evt);
@@ -238,7 +241,6 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
 
         txtFundsReceived.setBackground(new java.awt.Color(22, 27, 34));
         txtFundsReceived.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtFundsReceived.setForeground(new java.awt.Color(188, 188, 188));
         txtFundsReceived.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N

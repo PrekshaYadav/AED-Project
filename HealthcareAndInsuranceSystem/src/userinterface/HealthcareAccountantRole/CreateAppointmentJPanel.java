@@ -439,8 +439,6 @@ public class CreateAppointmentJPanel extends javax.swing.JPanel {
         jLabel34.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel34.setText("Reason for Visit:");
 
-        txtReasonForVisit.setForeground(new java.awt.Color(188, 188, 188));
-
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel11.setText("PATIENT MEDICAL CONDITION");
 
@@ -448,18 +446,11 @@ public class CreateAppointmentJPanel extends javax.swing.JPanel {
         lblPolicyNum.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblPolicyNum.setText("Provide Insurance Policy Number :");
 
-        txtPolicyNum.setForeground(new java.awt.Color(188, 188, 188));
         txtPolicyNum.setEnabled(false);
-
-        txtInsuranceCompany.setForeground(new java.awt.Color(188, 188, 188));
-
-        txtPolicyName.setForeground(new java.awt.Color(188, 188, 188));
 
         lblCoverage.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         lblCoverage.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblCoverage.setText("Patient Insurance Coverage % :");
-
-        txtCoverage.setForeground(new java.awt.Color(188, 188, 188));
 
         btnResetPolicyNum.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnResetPolicyNum.setText("Reset Policy Number");
