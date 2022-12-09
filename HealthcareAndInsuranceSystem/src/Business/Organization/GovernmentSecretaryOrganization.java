@@ -9,10 +9,7 @@ import Business.Role.GovernmentSecretaries;
 import Business.Role.Role;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public class GovernmentSecretaryOrganization extends Organization {
 
     public GovernmentSecretaryOrganization() {

@@ -11,10 +11,6 @@ import Business.Role.Role;
 import Business.Role.SystemAdminRole;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
 public class EcoSystem extends Organization {
 
     private static EcoSystem ecosystem;

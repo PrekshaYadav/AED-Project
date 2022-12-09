@@ -8,10 +8,7 @@ import Business.Employee.Employee;
 import Business.Role.Role;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public class UserAccountDirectory {
 
     private ArrayList<UserAccount> userAccountList;

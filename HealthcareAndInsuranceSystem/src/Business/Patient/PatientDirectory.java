@@ -7,10 +7,7 @@ package Business.Patient;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author priyankachaudhari
- */
+
 public class PatientDirectory {
 
     private ArrayList<Patient> patients = new ArrayList<>();

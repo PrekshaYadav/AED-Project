@@ -7,10 +7,7 @@ package Business.Pharmacy;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public class Pharmacy {
     
     private String pharmaName;

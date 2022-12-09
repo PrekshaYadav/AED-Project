@@ -10,10 +10,7 @@ import Business.UserAccount.UserAccountDirectory;
 import Business.WorkQueue.WorkQueue;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public abstract class Organization {
 
     public String organizationName;

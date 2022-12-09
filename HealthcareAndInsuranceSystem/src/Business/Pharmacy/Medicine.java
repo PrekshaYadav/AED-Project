@@ -5,10 +5,7 @@
  */
 package Business.Pharmacy;
 
-/**
- *
- * @author Sumit
- */
+
 public class Medicine {
     
     private String medicineName;

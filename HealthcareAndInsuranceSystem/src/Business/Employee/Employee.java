@@ -5,10 +5,6 @@
  */
 package Business.Employee;
 
-/**
- *
- * @author priyankachaudhari
- */
 public class Employee {
 
     private String empName;
