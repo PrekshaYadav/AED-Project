@@ -72,8 +72,8 @@ public class EmailBillingInformationToPatient extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         emailTxtFiled.setColumns(20);
-        emailTxtFiled.setForeground(new java.awt.Color(188, 188, 188));
         emailTxtFiled.setRows(5);
+        emailTxtFiled.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jScrollPane1.setViewportView(emailTxtFiled);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 600, 260));
