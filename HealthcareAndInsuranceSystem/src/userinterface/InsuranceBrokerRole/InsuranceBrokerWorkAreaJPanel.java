@@ -70,7 +70,6 @@ public class InsuranceBrokerWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setText("INSURANCE BROKER WORK AREA");
-        jLabel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 6, 410, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -154,14 +153,6 @@ public class InsuranceBrokerWorkAreaJPanel extends javax.swing.JPanel {
 
         btnLogoutPatient.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnLogoutPatient.setText("Logout");
-        btnLogoutPatient.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnLogoutPatientMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnLogoutPatientMouseExited(evt);
-            }
-        });
         btnLogoutPatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogoutPatientActionPerformed(evt);
@@ -189,18 +180,6 @@ public class InsuranceBrokerWorkAreaJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
 
     }//GEN-LAST:event_btnProcessInsuranceRequestsActionPerformed
-
-    private void btnLogoutPatientMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutPatientMouseEntered
-        // TODO add your handling code here:
-        btnLogoutPatient.setForeground(new Color(255, 255, 255));
-        btnLogoutPatient.setBackground(new Color(158, 33, 50));
-    }//GEN-LAST:event_btnLogoutPatientMouseEntered
-
-    private void btnLogoutPatientMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutPatientMouseExited
-        // TODO add your handling code here:
-        btnLogoutPatient.setForeground(new Color(188, 188, 188));
-        btnLogoutPatient.setBackground(new Color(13, 17, 23));
-    }//GEN-LAST:event_btnLogoutPatientMouseExited
 
     private void btnLogoutPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutPatientActionPerformed
         // TODO add your handling code here:

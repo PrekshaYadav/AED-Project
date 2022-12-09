@@ -225,14 +225,6 @@ public class ProcessRequestJPanel extends javax.swing.JPanel {
 
         backJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         backJButton.setText("Back");
-        backJButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                backJButtonMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                backJButtonMouseExited(evt);
-            }
-        });
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
@@ -340,18 +332,6 @@ public class ProcessRequestJPanel extends javax.swing.JPanel {
         }
 
     }//GEN-LAST:event_btnRejectActionPerformed
-
-    private void backJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseEntered
-        // TODO add your handling code here:
-        backJButton.setForeground(new Color(0, 0, 0));
-        backJButton.setBackground(new Color(144, 202, 249));
-    }//GEN-LAST:event_backJButtonMouseEntered
-
-    private void backJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseExited
-        // TODO add your handling code here:
-        backJButton.setForeground(new Color(188, 188, 188));
-        backJButton.setBackground(new Color(13, 17, 23));
-    }//GEN-LAST:event_backJButtonMouseExited
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
 
