@@ -121,7 +121,6 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel12.setText("ADD NEW CUSTOMER PANEL");
-        jLabel12.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 6, 400, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -170,14 +169,17 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         jLabel20.setText("Phone Number :");
 
         txtFirstName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtFirstName.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         txtLastName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtLastName.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jDateChooserDob.setBackground(new java.awt.Color(255, 255, 255));
         jDateChooserDob.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jDateChooserDob.setMaxSelectableDate(Calendar.getInstance().getTime());
 
         txtPhone.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtPhone.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel21.setBackground(new java.awt.Color(255, 255, 255));
         jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -185,6 +187,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         jLabel21.setText("SSN :");
 
         txtSSN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtSSN.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel22.setBackground(new java.awt.Color(255, 255, 255));
         jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -193,6 +196,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
 
         cmbGender.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         cmbGender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Female", "Male", "Other" }));
+        cmbGender.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel24.setBackground(new java.awt.Color(255, 255, 255));
         jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -200,6 +204,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         jLabel24.setText("Policy Name :");
 
         cmbInsuranceName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cmbInsuranceName.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         cmbInsuranceName.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 cmbInsuranceNameFocusGained(evt);
@@ -225,6 +230,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         jLabel25.setText("Address :");
 
         txtAddress.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtAddress.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel26.setBackground(new java.awt.Color(255, 255, 255));
         jLabel26.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -232,8 +238,10 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         jLabel26.setText("Email :");
 
         txtEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtEmail.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         txtPolicyNumber.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtPolicyNumber.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel23.setBackground(new java.awt.Color(255, 255, 255));
         jLabel23.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -246,6 +254,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
         jLabel27.setText("Policy Coverage(%) :");
 
         txtInsuranceCoverage.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtInsuranceCoverage.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -309,7 +318,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
                         .addComponent(jLabel27)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtInsuranceCoverage, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -346,7 +355,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(cmbGender, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25))
@@ -369,7 +378,7 @@ public class AddNewPolicyHolderJPanel extends javax.swing.JPanel {
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel20, jLabel21, jLabel22, jLabel24});
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 510, 550));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 510, 560));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/Insurance policy.gif"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, 500, 500));
