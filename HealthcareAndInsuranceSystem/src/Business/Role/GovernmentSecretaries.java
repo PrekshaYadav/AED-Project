@@ -14,10 +14,7 @@ import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.GovernmentSecretaryRole.GovernmentSecretaryWorkAreaJPanel;
 
-/**
- *
- * @author Sumit
- */
+
 public class GovernmentSecretaries extends Role {
 
     @Override

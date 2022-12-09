@@ -8,10 +8,7 @@ import Business.Employee.Employee;
 import Business.Role.Role;
 import Business.WorkQueue.WorkQueue;
 
-/**
- *
- * @author Sumit
- */
+
 public class UserAccount {
 
     public String username;

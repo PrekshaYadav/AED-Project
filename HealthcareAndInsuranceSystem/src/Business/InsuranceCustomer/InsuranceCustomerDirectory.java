@@ -5,10 +5,7 @@
  */
 package Business.InsuranceCustomer;
 
-/**
- *
- * @author priyankachaudhari
- */
+
 import java.util.ArrayList;
 import java.util.List;
 

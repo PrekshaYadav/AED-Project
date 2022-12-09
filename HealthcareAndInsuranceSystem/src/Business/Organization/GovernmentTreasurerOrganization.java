@@ -9,10 +9,7 @@ import Business.Role.GovernmentTreasurer;
 import Business.Role.Role;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public class GovernmentTreasurerOrganization extends Organization {
 
     public GovernmentTreasurerOrganization() {

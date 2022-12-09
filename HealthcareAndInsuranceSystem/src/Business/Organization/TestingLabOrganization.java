@@ -8,10 +8,7 @@ import Business.Role.LabAssistantRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public class TestingLabOrganization extends Organization {
 
     public TestingLabOrganization() {

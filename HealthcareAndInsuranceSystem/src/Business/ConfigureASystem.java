@@ -10,10 +10,6 @@ import Business.Role.SystemAdminRole;
 import Business.UserAccount.UserAccount;
 
 
-/**
- *
- * @author Sumit
- */
 public class ConfigureASystem {
 
     public static EcoSystem configure() {

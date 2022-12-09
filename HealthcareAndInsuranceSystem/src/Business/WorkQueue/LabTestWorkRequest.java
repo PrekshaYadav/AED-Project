@@ -4,10 +4,7 @@
  */
 package Business.WorkQueue;
 
-/**
- *
- * @author Sumit
- */
+
 public class LabTestWorkRequest extends WorkRequest {
 
     private String testResult;

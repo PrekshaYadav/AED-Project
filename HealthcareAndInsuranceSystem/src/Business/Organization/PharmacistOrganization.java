@@ -9,10 +9,7 @@ import Business.Role.PharmacistRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
-/**
- *
- * @author Sumit
- */
+
 public class PharmacistOrganization extends Organization{
 
     public PharmacistOrganization() {

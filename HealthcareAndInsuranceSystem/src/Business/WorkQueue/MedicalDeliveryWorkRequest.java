@@ -9,10 +9,7 @@ import Business.Pharmacy.Medicine;
 import Business.UserAccount.UserAccount;
 import java.util.HashMap;
 
-/**
- *
- * @author Sumit
- */
+
 public class MedicalDeliveryWorkRequest extends WorkRequest {
     
     private HashMap<Medicine,Integer> medicines;

@@ -14,10 +14,6 @@ import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.GovernmentTreasurerRole.GovernmentTreasurerWorkAreaJPanel;
 
-/**
- *
- * @author Sumit
- */
 public class GovernmentTreasurer extends Role {
 
     @Override

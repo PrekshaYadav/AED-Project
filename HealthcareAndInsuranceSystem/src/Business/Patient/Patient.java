@@ -7,10 +7,7 @@ package Business.Patient;
 
 import Business.InsuranceCustomer.InsuranceCustomer;
 
-/**
- *
- * @author priyankachaudhari
- */
+
 public class Patient {
 
     private String patientId;

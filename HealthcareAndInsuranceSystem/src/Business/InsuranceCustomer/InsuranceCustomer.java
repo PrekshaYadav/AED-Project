@@ -5,10 +5,7 @@
  */
 package Business.InsuranceCustomer;
 
-/**
- *
- * @author priyankachaudhari
- */
+
 import Business.Insurance.Insurance;
 
 public class InsuranceCustomer {

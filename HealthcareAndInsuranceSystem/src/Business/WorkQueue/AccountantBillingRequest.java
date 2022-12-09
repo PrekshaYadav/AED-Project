@@ -7,10 +7,7 @@ package Business.WorkQueue;
 
 import Business.Patient.Patient;
 
-/**
- *
- * @author Sumit
- */
+
 public class AccountantBillingRequest extends WorkRequest {
 
     private double billingAmount;
