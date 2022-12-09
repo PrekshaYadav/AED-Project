@@ -8,6 +8,8 @@ import Business.Employee.Employee;
 import Business.Organization.Organization;
 import Business.Organization.OrganizationDirectory;
 import Business.Organization.PatientOrganization;
+import Business.UserAccount.UserAccount;
+import Business.UserAccount.UserAccountDirectory;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Font;
@@ -17,15 +19,12 @@ import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 
-/**
- *
- * @author Sumit
- */
+
 public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
     private OrganizationDirectory organizationDir;
     private JPanel userProcessContainer;
-
+    private Organization organization;
     public ManageEmployeeJPanel(JPanel userProcessContainer, OrganizationDirectory organizationDir) {
         initComponents();
         
@@ -72,7 +71,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         for (Employee employee : organization.getEmployeeDirectory().getEmployeeList()) {
             Object[] row = new Object[2];
             row[0] = employee.getEmpId();
-            row[1] = employee.getEmpName();
+            row[1] = employee;
             model.addRow(row);
         }
         TableRowSorter<DefaultTableModel> sorter = new TableRowSorter<>(model);
@@ -100,23 +99,21 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         organizationEmpJComboBox = new javax.swing.JComboBox();
         jLabel11 = new javax.swing.JLabel();
         nameJTextField = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        btnRequestFunds1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(13, 17, 23));
+        setBackground(new java.awt.Color(207, 207, 207));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(188, 188, 188));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("MANAGE EMPLOYEE");
 
-        btnRequestFunds.setBackground(new java.awt.Color(22, 27, 34));
         btnRequestFunds.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnRequestFunds.setForeground(new java.awt.Color(188, 188, 188));
         btnRequestFunds.setText("Create Employee");
         btnRequestFunds.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -140,14 +137,12 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(188, 188, 188));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("You can manage employees below.");
 
-        organizationJTable.setBackground(new java.awt.Color(22, 27, 34));
         organizationJTable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        organizationJTable.setForeground(new java.awt.Color(188, 188, 188));
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -177,12 +172,11 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(188, 188, 188));
         jLabel8.setText("View Employees:");
 
         organizationJComboBox.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        organizationJComboBox.setForeground(new java.awt.Color(188, 188, 188));
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,22 +184,43 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(188, 188, 188));
         jLabel10.setText("Organization:");
 
         organizationEmpJComboBox.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        organizationEmpJComboBox.setForeground(new java.awt.Color(188, 188, 188));
         organizationEmpJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(188, 188, 188));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel11.setText("Enter Name:");
 
-        nameJTextField.setBackground(new java.awt.Color(22, 27, 34));
         nameJTextField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        nameJTextField.setForeground(new java.awt.Color(188, 188, 188));
+
+        btnRequestFunds1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnRequestFunds1.setText("Delete Employee");
+        btnRequestFunds1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                btnRequestFunds1FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                btnRequestFunds1FocusLost(evt);
+            }
+        });
+        btnRequestFunds1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnRequestFunds1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnRequestFunds1MouseExited(evt);
+            }
+        });
+        btnRequestFunds1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequestFunds1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -216,29 +231,32 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(79, 79, 79))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(40, 40, 40)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addGap(14, 14, 14)
+                                    .addComponent(jLabel8)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(organizationJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(74, 74, 74)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(organizationEmpJComboBox, 0, 173, Short.MAX_VALUE)
+                                .addComponent(nameJTextField))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(103, 103, 103)
-                        .addComponent(btnRequestFunds, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(organizationJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(organizationEmpJComboBox, 0, 173, Short.MAX_VALUE)
-                            .addComponent(nameJTextField))))
+                        .addGap(49, 49, 49)
+                        .addComponent(btnRequestFunds1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRequestFunds)))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
@@ -265,35 +283,21 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                     .addComponent(nameJTextField))
-                .addGap(35, 35, 35)
-                .addComponent(btnRequestFunds, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addGap(56, 56, 56)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnRequestFunds, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRequestFunds1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel8, organizationEmpJComboBox, organizationJComboBox});
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 420, 550));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("<> with ♡ by Team Batman");
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel4MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel4MouseExited(evt);
-            }
-        });
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 705, 282, -1));
-
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/Add User.gif"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, 500, 500));
 
-        backJButton.setBackground(new java.awt.Color(13, 17, 23));
         backJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        backJButton.setForeground(new java.awt.Color(188, 188, 188));
         backJButton.setText("Back");
         backJButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -312,7 +316,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void organizationJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_organizationJComboBoxActionPerformed
-        Organization organization = (Organization) organizationJComboBox.getSelectedItem();
+        organization = (Organization) organizationJComboBox.getSelectedItem();
         if (organization != null) {
             populateTable(organization);
         }
@@ -320,26 +324,26 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
     private void btnRequestFundsFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnRequestFundsFocusGained
         // TODO add your handling code here:
-        btnRequestFunds.setForeground(new Color(255,255,255));
-        btnRequestFunds.setBackground(new Color(144,202,249));
+//        btnRequestFunds.setForeground(new Color(255,255,255));
+//        btnRequestFunds.setBackground(new Color(144,202,249));
     }//GEN-LAST:event_btnRequestFundsFocusGained
 
     private void btnRequestFundsFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnRequestFundsFocusLost
         // TODO add your handling code here:
-        btnRequestFunds.setForeground(new Color(188,188,188));
-        btnRequestFunds.setBackground(new Color(13,17,23));
+//        btnRequestFunds.setForeground(new Color(188,188,188));
+//        btnRequestFunds.setBackground(new Color(13,17,23));
     }//GEN-LAST:event_btnRequestFundsFocusLost
 
     private void btnRequestFundsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRequestFundsMouseEntered
         // TODO add your handling code here:
-        btnRequestFunds.setForeground(new Color(255,255,255));
-        btnRequestFunds.setBackground(new Color(144,202,249));
+//        btnRequestFunds.setForeground(new Color(255,255,255));
+//        btnRequestFunds.setBackground(new Color(144,202,249));
     }//GEN-LAST:event_btnRequestFundsMouseEntered
 
     private void btnRequestFundsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRequestFundsMouseExited
         // TODO add your handling code here:
-        btnRequestFunds.setForeground(new Color(188,188,188));
-        btnRequestFunds.setBackground(new Color(13,17,23));
+//        btnRequestFunds.setForeground(new Color(188,188,188));
+//        btnRequestFunds.setBackground(new Color(13,17,23));
     }//GEN-LAST:event_btnRequestFundsMouseExited
 
     private void btnRequestFundsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestFundsActionPerformed
@@ -355,28 +359,16 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         nameJTextField.setText("");
     }//GEN-LAST:event_btnRequestFundsActionPerformed
 
-    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
-        // TODO add your handling code here:
-
-        jLabel4.setFont(new Font(jLabel4.getFont().getName(),Font.PLAIN,19));
-    }//GEN-LAST:event_jLabel4MouseEntered
-
-    private void jLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseExited
-        // TODO add your handling code here:
-
-        jLabel4.setFont(new Font(jLabel4.getFont().getName(),Font.PLAIN,18));
-    }//GEN-LAST:event_jLabel4MouseExited
-
     private void backJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseEntered
         // TODO add your handling code here:
-        backJButton.setForeground(new Color(0,0,0));
-        backJButton.setBackground(new Color(144,202,249));
+//        backJButton.setForeground(new Color(0,0,0));
+//        backJButton.setBackground(new Color(144,202,249));
     }//GEN-LAST:event_backJButtonMouseEntered
 
     private void backJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseExited
         // TODO add your handling code here:
-        backJButton.setForeground(new Color(188,188,188));
-        backJButton.setBackground(new Color(13,17,23));
+//        backJButton.setForeground(new Color(188,188,188));
+//        backJButton.setBackground(new Color(13,17,23));
     }//GEN-LAST:event_backJButtonMouseExited
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -389,12 +381,111 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
+    private void btnDeleteEmployeeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnDeleteEmployeeFocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteEmployeeFocusGained
+
+    private void btnDeleteEmployeeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnDeleteEmployeeFocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteEmployeeFocusLost
+
+    private void btnDeleteEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteEmployeeMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteEmployeeMouseEntered
+
+    private void btnDeleteEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteEmployeeMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteEmployeeMouseExited
+
+    private void btnDeleteEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteEmployeeActionPerformed
+        // TODO add your handling code here:
+        int selected_row = organizationJTable.getSelectedRow();
+        if(selected_row < 0)
+        {
+            JOptionPane.showMessageDialog( this, "Please select a row to delete");
+            return;
+        }
+        DefaultTableModel model = (DefaultTableModel) organizationJTable.getModel();
+        Employee emp_Selected = (Employee)model.getValueAt(selected_row, 1);
+        UserAccountDirectory usd = organization.getUserAccountDirectory();
+        int flag = 0;
+        UserAccount selected_ua = new UserAccount();
+        for(UserAccount ua : usd.getUserAccountList())
+        {
+            if (ua.getEmployee().equals(emp_Selected))
+            {
+                selected_ua = ua;
+                flag = 1;
+                break;
+                
+            }
+            
+        }
+        if(flag == 1)
+        {
+            usd.getUserAccountList().remove(selected_ua);
+            organization.getEmployeeDirectory().getEmployeeList().remove(emp_Selected);
+            System.out.println("Useraccount and employee deleted");
+        }
+        populateTable(organization);
+    }//GEN-LAST:event_btnDeleteEmployeeActionPerformed
+
+    private void btnRequestFunds1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnRequestFunds1FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequestFunds1FocusGained
+
+    private void btnRequestFunds1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnRequestFunds1FocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequestFunds1FocusLost
+
+    private void btnRequestFunds1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRequestFunds1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequestFunds1MouseEntered
+
+    private void btnRequestFunds1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRequestFunds1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequestFunds1MouseExited
+
+    private void btnRequestFunds1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestFunds1ActionPerformed
+        // TODO add your handling code here:
+        int selected_row = organizationJTable.getSelectedRow();
+        if(selected_row < 0)
+        {
+            JOptionPane.showMessageDialog( this, "Please select a row to delete");
+            return;
+        }
+        DefaultTableModel model = (DefaultTableModel) organizationJTable.getModel();
+        Employee emp_Selected = (Employee)model.getValueAt(selected_row, 1);
+        UserAccountDirectory usd = organization.getUserAccountDirectory();
+        int flag = 0;
+        UserAccount selected_ua = new UserAccount();
+        for(UserAccount ua : usd.getUserAccountList())
+        {
+            if (ua.getEmployee().equals(emp_Selected))
+            {
+                selected_ua = ua;
+                flag = 1;
+                break;
+                
+            }
+            
+        }
+        if(flag == 1)
+        {
+            usd.getUserAccountList().remove(selected_ua);
+            organization.getEmployeeDirectory().getEmployeeList().remove(emp_Selected);
+            System.out.println("Useraccount and employee deleted");
+        }
+        populateTable(organization);
+        
+    }//GEN-LAST:event_btnRequestFunds1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JButton btnRequestFunds;
+    private javax.swing.JButton btnRequestFunds1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
