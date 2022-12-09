@@ -124,7 +124,6 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("ENTERPRISE");
 
-        enterpriseJTable.setForeground(new java.awt.Color(188, 188, 188));
         enterpriseJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},

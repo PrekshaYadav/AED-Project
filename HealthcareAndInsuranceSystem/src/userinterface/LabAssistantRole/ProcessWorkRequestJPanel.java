@@ -101,6 +101,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
+        resultJTextField.setAutoscrolls(false);
         resultJTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N

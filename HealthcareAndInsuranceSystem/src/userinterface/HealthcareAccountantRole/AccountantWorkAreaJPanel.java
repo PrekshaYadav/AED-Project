@@ -68,7 +68,6 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
         tblAllPatients = new javax.swing.JTable();
         btnReport = new javax.swing.JButton();
         btnLogoutPatient = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(207, 207, 207));
@@ -205,20 +204,6 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(btnLogoutPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 10, -1, 32));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("<> with ♡ by Team Batman");
-        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel12MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel12MouseExited(evt);
-            }
-        });
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 705, 282, -1));
-
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setText("RECEPTIONIST WORK AREA");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 6, 380, -1));
@@ -281,18 +266,6 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
         crdLyt.next(userProcessContainer);
         dB4OUtil.storeSystem(ecoSystem);
     }//GEN-LAST:event_btnLogoutPatientActionPerformed
-
-    private void jLabel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseEntered
-        // TODO add your handling code here:
-
-        jLabel2.setFont(new Font(jLabel2.getFont().getName(), Font.PLAIN, 19));
-    }//GEN-LAST:event_jLabel12MouseEntered
-
-    private void jLabel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseExited
-        // TODO add your handling code here:
-
-        jLabel2.setFont(new Font(jLabel2.getFont().getName(), Font.PLAIN, 18));
-    }//GEN-LAST:event_jLabel12MouseExited
 
     private void btnCreateAppointmentFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnCreateAppointmentFocusGained
         // TODO add your handling code here:
@@ -372,7 +345,6 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnLogoutPatient;
     private javax.swing.JButton btnProcessMedicalBillings;
     private javax.swing.JButton btnReport;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblAllPatients;
