@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Sumit
+ *
  */
 public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
@@ -116,15 +116,12 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         jLabel16 = new javax.swing.JLabel();
         passwordJTextField = new javax.swing.JPasswordField();
         rePasswordJTextField = new javax.swing.JPasswordField();
-        jLabel11 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(13, 17, 23));
+        setBackground(new java.awt.Color(207, 207, 207));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        backJButton.setBackground(new java.awt.Color(13, 17, 23));
         backJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        backJButton.setForeground(new java.awt.Color(188, 188, 188));
         backJButton.setText("Back");
         backJButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -141,16 +138,14 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 6, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(188, 188, 188));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("MANAGE USER ACCOUNT");
 
-        btnAddOrg.setBackground(new java.awt.Color(22, 27, 34));
         btnAddOrg.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnAddOrg.setForeground(new java.awt.Color(188, 188, 188));
         btnAddOrg.setText("Create User Account");
         btnAddOrg.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -174,18 +169,15 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(188, 188, 188));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("You can manage users below.");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(188, 188, 188));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel10.setText("Organization :");
 
-        userJTable.setBackground(new java.awt.Color(22, 27, 34));
-        userJTable.setForeground(new java.awt.Color(188, 188, 188));
         userJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -224,7 +216,6 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         });
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(188, 188, 188));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel12.setText("Role :");
 
@@ -232,7 +223,6 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         roleJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(188, 188, 188));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel13.setText("Employee :");
 
@@ -240,13 +230,10 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         employeeJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(188, 188, 188));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel14.setText("Username :");
 
-        nameJTextField.setBackground(new java.awt.Color(22, 27, 34));
         nameJTextField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        nameJTextField.setForeground(new java.awt.Color(188, 188, 188));
         nameJTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nameJTextFieldActionPerformed(evt);
@@ -254,22 +241,16 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         });
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(188, 188, 188));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel15.setText("Password :");
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(188, 188, 188));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel16.setText("Confirm Password :");
 
-        passwordJTextField.setBackground(new java.awt.Color(22, 27, 34));
         passwordJTextField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        passwordJTextField.setForeground(new java.awt.Color(188, 188, 188));
 
-        rePasswordJTextField.setBackground(new java.awt.Color(22, 27, 34));
         rePasswordJTextField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        rePasswordJTextField.setForeground(new java.awt.Color(188, 188, 188));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -363,20 +344,6 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 420, 550));
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("<> with ♡ by Team Batman");
-        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel11MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel11MouseExited(evt);
-            }
-        });
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 705, 282, -1));
-
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/User flow.gif"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, 500, 500));
     }// </editor-fold>//GEN-END:initComponents
@@ -402,14 +369,14 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
     private void backJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseEntered
         // TODO add your handling code here:
-        backJButton.setForeground(new Color(0, 0, 0));
-        backJButton.setBackground(new Color(144, 202, 249));
+//        backJButton.setForeground(new Color(0, 0, 0));
+//        backJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_backJButtonMouseEntered
 
     private void backJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseExited
         // TODO add your handling code here:
-        backJButton.setForeground(new Color(188, 188, 188));
-        backJButton.setBackground(new Color(13, 17, 23));
+//        backJButton.setForeground(new Color(188, 188, 188));
+//        backJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_backJButtonMouseExited
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -424,26 +391,26 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
     private void btnAddOrgFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnAddOrgFocusGained
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(255, 255, 255));
-        btnAddOrg.setBackground(new Color(144, 202, 249));
+//        btnAddOrg.setForeground(new Color(255, 255, 255));
+//        btnAddOrg.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnAddOrgFocusGained
 
     private void btnAddOrgFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnAddOrgFocusLost
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(188, 188, 188));
-        btnAddOrg.setBackground(new Color(13, 17, 23));
+//        btnAddOrg.setForeground(new Color(188, 188, 188));
+//        btnAddOrg.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnAddOrgFocusLost
 
     private void btnAddOrgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddOrgMouseEntered
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(255, 255, 255));
-        btnAddOrg.setBackground(new Color(144, 202, 249));
+//        btnAddOrg.setForeground(new Color(255, 255, 255));
+//        btnAddOrg.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnAddOrgMouseEntered
 
     private void btnAddOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddOrgMouseExited
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(188, 188, 188));
-        btnAddOrg.setBackground(new Color(13, 17, 23));
+//        btnAddOrg.setForeground(new Color(188, 188, 188));
+//        btnAddOrg.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnAddOrgMouseExited
 
     private void btnAddOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddOrgActionPerformed
@@ -504,24 +471,11 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_btnAddOrgActionPerformed
 
-    private void jLabel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseEntered
-        // TODO add your handling code here:
-
-        jLabel11.setFont(new Font(jLabel11.getFont().getName(), Font.PLAIN, 19));
-    }//GEN-LAST:event_jLabel11MouseEntered
-
-    private void jLabel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseExited
-        // TODO add your handling code here:
-
-        jLabel11.setFont(new Font(jLabel11.getFont().getName(), Font.PLAIN, 18));
-    }//GEN-LAST:event_jLabel11MouseExited
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JButton btnAddOrg;
     private javax.swing.JComboBox employeeJComboBox;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;

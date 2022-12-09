@@ -25,7 +25,7 @@ import javax.swing.table.TableRowSorter;
 
 /**
  *
- * @author Sumit
+ * 
  */
 public class RequestFundsJPanel extends javax.swing.JPanel {
 
@@ -95,15 +95,12 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         jLabel13 = new javax.swing.JLabel();
         txtFundsReceived = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(13, 17, 23));
+        setBackground(new java.awt.Color(207, 207, 207));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        backJButton.setBackground(new java.awt.Color(13, 17, 23));
         backJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        backJButton.setForeground(new java.awt.Color(188, 188, 188));
         backJButton.setText("Back");
         backJButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -120,21 +117,17 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 6, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(188, 188, 188));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("REQUEST FUNDS");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(188, 188, 188));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel10.setText("Location :");
 
-        organizationJTable.setBackground(new java.awt.Color(22, 27, 34));
         organizationJTable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        organizationJTable.setForeground(new java.awt.Color(188, 188, 188));
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -160,9 +153,7 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(organizationJTable);
 
-        btnDeleteOrg.setBackground(new java.awt.Color(22, 27, 34));
         btnDeleteOrg.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnDeleteOrg.setForeground(new java.awt.Color(188, 188, 188));
         btnDeleteOrg.setText("Send Request");
         btnDeleteOrg.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -186,9 +177,7 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
             }
         });
 
-        txtLocation.setBackground(new java.awt.Color(22, 27, 34));
         txtLocation.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtLocation.setForeground(new java.awt.Color(188, 188, 188));
         txtLocation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtLocationActionPerformed(evt);
@@ -196,13 +185,10 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         });
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(188, 188, 188));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel11.setText("Population :");
 
-        txtpopulation.setBackground(new java.awt.Color(22, 27, 34));
         txtpopulation.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtpopulation.setForeground(new java.awt.Color(188, 188, 188));
         txtpopulation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtpopulationActionPerformed(evt);
@@ -210,22 +196,17 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         });
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(188, 188, 188));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel12.setText("Amount($) :");
 
-        txtAmount.setBackground(new java.awt.Color(22, 27, 34));
         txtAmount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtAmount.setForeground(new java.awt.Color(188, 188, 188));
         txtAmount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAmountActionPerformed(evt);
             }
         });
 
-        workRequestJTable.setBackground(new java.awt.Color(22, 27, 34));
         workRequestJTable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        workRequestJTable.setForeground(new java.awt.Color(188, 188, 188));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -252,16 +233,15 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(workRequestJTable);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(188, 188, 188));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel13.setText("Total Received Amount($) :");
 
         txtFundsReceived.setBackground(new java.awt.Color(22, 27, 34));
         txtFundsReceived.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtFundsReceived.setForeground(new java.awt.Color(188, 188, 188));
+        txtFundsReceived.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(188, 188, 188));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Request History");
 
@@ -349,20 +329,6 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 420, 550));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("<> with ♡ by Team Batman");
-        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel6MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel6MouseExited(evt);
-            }
-        });
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 705, 282, -1));
-
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/Pot of gold.gif"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, 500, 500));
     }// </editor-fold>//GEN-END:initComponents
@@ -381,14 +347,14 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
 
     private void backJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseEntered
         // TODO add your handling code here:
-        backJButton.setForeground(new Color(0, 0, 0));
-        backJButton.setBackground(new Color(144, 202, 249));
+//        backJButton.setForeground(new Color(0, 0, 0));
+//        backJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_backJButtonMouseEntered
 
     private void backJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseExited
         // TODO add your handling code here:
-        backJButton.setForeground(new Color(188, 188, 188));
-        backJButton.setBackground(new Color(13, 17, 23));
+//        backJButton.setForeground(new Color(188, 188, 188));
+//        backJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_backJButtonMouseExited
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -403,26 +369,26 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
 
     private void btnDeleteOrgFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnDeleteOrgFocusGained
         // TODO add your handling code here:
-        btnDeleteOrg.setForeground(new Color(255, 255, 255));
-        btnDeleteOrg.setBackground(new Color(144, 202, 249));
+//        btnDeleteOrg.setForeground(new Color(255, 255, 255));
+//        btnDeleteOrg.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnDeleteOrgFocusGained
 
     private void btnDeleteOrgFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnDeleteOrgFocusLost
         // TODO add your handling code here:
-        btnDeleteOrg.setForeground(new Color(188, 188, 188));
-        btnDeleteOrg.setBackground(new Color(13, 17, 23));
+//        btnDeleteOrg.setForeground(new Color(188, 188, 188));
+//        btnDeleteOrg.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnDeleteOrgFocusLost
 
     private void btnDeleteOrgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteOrgMouseEntered
         // TODO add your handling code here:
-        btnDeleteOrg.setForeground(new Color(255, 255, 255));
-        btnDeleteOrg.setBackground(new Color(144, 202, 249));
+//        btnDeleteOrg.setForeground(new Color(255, 255, 255));
+//        btnDeleteOrg.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnDeleteOrgMouseEntered
 
     private void btnDeleteOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteOrgMouseExited
         // TODO add your handling code here:
-        btnDeleteOrg.setForeground(new Color(188, 188, 188));
-        btnDeleteOrg.setBackground(new Color(13, 17, 23));
+//        btnDeleteOrg.setForeground(new Color(188, 188, 188));
+//        btnDeleteOrg.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnDeleteOrgMouseExited
 
     private void btnDeleteOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteOrgActionPerformed
@@ -476,18 +442,6 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnDeleteOrgActionPerformed
 
-    private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
-        // TODO add your handling code here:
-
-        jLabel6.setFont(new Font(jLabel6.getFont().getName(), Font.PLAIN, 19));
-    }//GEN-LAST:event_jLabel6MouseEntered
-
-    private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
-        // TODO add your handling code here:
-
-        jLabel6.setFont(new Font(jLabel6.getFont().getName(), Font.PLAIN, 18));
-    }//GEN-LAST:event_jLabel6MouseExited
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
@@ -497,7 +451,6 @@ public class RequestFundsJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;

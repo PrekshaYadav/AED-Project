@@ -15,7 +15,7 @@ import userinterface.LoginJPanel;
 
 /**
  *
- * @author Sumit
+ * 
  */
 public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -53,7 +53,6 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         btnLogoutPatient = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
@@ -66,31 +65,14 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(13, 17, 23));
+        setBackground(new java.awt.Color(207, 207, 207));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(188, 188, 188));
         jLabel2.setText("ADMINISTRATIVE WORK AREA");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 6, 380, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("<> with ♡ by Team Batman");
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel3MouseExited(evt);
-            }
-        });
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 705, 282, -1));
-
-        btnLogoutPatient.setBackground(new java.awt.Color(13, 17, 23));
         btnLogoutPatient.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnLogoutPatient.setForeground(new java.awt.Color(188, 188, 188));
         btnLogoutPatient.setText("Logout");
         btnLogoutPatient.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -107,25 +89,20 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(btnLogoutPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 10, -1, 32));
 
-        jPanel1.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(188, 188, 188));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("ADMIN TASKS");
 
         enterpriseLabel.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(188, 188, 188));
         enterpriseLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         enterpriseLabel.setText("Enterprise :");
 
         valueLabel.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        valueLabel.setForeground(new java.awt.Color(188, 188, 188));
         valueLabel.setText("<value>");
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(22, 27, 34));
         manageOrganizationJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        manageOrganizationJButton.setForeground(new java.awt.Color(188, 188, 188));
         manageOrganizationJButton.setText("Manage Organization");
         manageOrganizationJButton.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -149,9 +126,7 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageEmployeeJButton.setBackground(new java.awt.Color(22, 27, 34));
         manageEmployeeJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        manageEmployeeJButton.setForeground(new java.awt.Color(188, 188, 188));
         manageEmployeeJButton.setText("Manage Employee");
         manageEmployeeJButton.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -175,9 +150,7 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        userJButton.setBackground(new java.awt.Color(22, 27, 34));
         userJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        userJButton.setForeground(new java.awt.Color(188, 188, 188));
         userJButton.setText("Manage User Account");
         userJButton.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -201,9 +174,7 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnRequestFunds.setBackground(new java.awt.Color(22, 27, 34));
         btnRequestFunds.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnRequestFunds.setForeground(new java.awt.Color(188, 188, 188));
         btnRequestFunds.setText("Request Funds");
         btnRequestFunds.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -228,7 +199,6 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(188, 188, 188));
         jLabel7.setText("You can perform the below tasks.");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -325,28 +295,16 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_btnRequestFundsActionPerformed
 
-    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
-        // TODO add your handling code here:
-
-        jLabel3.setFont(new Font(jLabel3.getFont().getName(), Font.PLAIN, 19));
-    }//GEN-LAST:event_jLabel3MouseEntered
-
-    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseExited
-        // TODO add your handling code here:
-
-        jLabel3.setFont(new Font(jLabel3.getFont().getName(), Font.PLAIN, 18));
-    }//GEN-LAST:event_jLabel3MouseExited
-
     private void btnLogoutPatientMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutPatientMouseEntered
         // TODO add your handling code here:
-        btnLogoutPatient.setForeground(new Color(255, 255, 255));
-        btnLogoutPatient.setBackground(new Color(158, 33, 50));
+//        btnLogoutPatient.setForeground(new Color(255, 255, 255));
+//        btnLogoutPatient.setBackground(new Color(158, 33, 50));
     }//GEN-LAST:event_btnLogoutPatientMouseEntered
 
     private void btnLogoutPatientMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutPatientMouseExited
         // TODO add your handling code here:
-        btnLogoutPatient.setForeground(new Color(188, 188, 188));
-        btnLogoutPatient.setBackground(new Color(13, 17, 23));
+//        btnLogoutPatient.setForeground(new Color(188, 188, 188));
+//        btnLogoutPatient.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnLogoutPatientMouseExited
 
     private void btnLogoutPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutPatientActionPerformed
@@ -363,98 +321,98 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void manageOrganizationJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manageOrganizationJButtonMouseEntered
         // TODO add your handling code here:
-        manageOrganizationJButton.setForeground(new Color(255, 255, 255));
-        manageOrganizationJButton.setBackground(new Color(144, 202, 249));
+//        manageOrganizationJButton.setForeground(new Color(255, 255, 255));
+//        manageOrganizationJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_manageOrganizationJButtonMouseEntered
 
     private void manageOrganizationJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manageOrganizationJButtonMouseExited
         // TODO add your handling code here:
-        manageOrganizationJButton.setForeground(new Color(188, 188, 188));
-        manageOrganizationJButton.setBackground(new Color(13, 17, 23));
+//        manageOrganizationJButton.setForeground(new Color(188, 188, 188));
+//        manageOrganizationJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_manageOrganizationJButtonMouseExited
 
     private void manageOrganizationJButtonFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_manageOrganizationJButtonFocusGained
         // TODO add your handling code here:
-        manageOrganizationJButton.setForeground(new Color(255, 255, 255));
-        manageOrganizationJButton.setBackground(new Color(144, 202, 249));
+//        manageOrganizationJButton.setForeground(new Color(255, 255, 255));
+//        manageOrganizationJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_manageOrganizationJButtonFocusGained
 
     private void manageOrganizationJButtonFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_manageOrganizationJButtonFocusLost
         // TODO add your handling code here:
-        manageOrganizationJButton.setForeground(new Color(188, 188, 188));
-        manageOrganizationJButton.setBackground(new Color(13, 17, 23));
+//        manageOrganizationJButton.setForeground(new Color(188, 188, 188));
+//        manageOrganizationJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_manageOrganizationJButtonFocusLost
 
     private void manageEmployeeJButtonFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonFocusGained
         // TODO add your handling code here:
-        manageEmployeeJButton.setForeground(new Color(255, 255, 255));
-        manageEmployeeJButton.setBackground(new Color(144, 202, 249));
+//        manageEmployeeJButton.setForeground(new Color(255, 255, 255));
+//        manageEmployeeJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_manageEmployeeJButtonFocusGained
 
     private void manageEmployeeJButtonFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonFocusLost
         // TODO add your handling code here:
-        manageEmployeeJButton.setForeground(new Color(188, 188, 188));
-        manageEmployeeJButton.setBackground(new Color(13, 17, 23));
+//        manageEmployeeJButton.setForeground(new Color(188, 188, 188));
+//        manageEmployeeJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_manageEmployeeJButtonFocusLost
 
     private void manageEmployeeJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonMouseEntered
         // TODO add your handling code here:
-        manageEmployeeJButton.setForeground(new Color(255, 255, 255));
-        manageEmployeeJButton.setBackground(new Color(144, 202, 249));
+//        manageEmployeeJButton.setForeground(new Color(255, 255, 255));
+//        manageEmployeeJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_manageEmployeeJButtonMouseEntered
 
     private void manageEmployeeJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonMouseExited
         // TODO add your handling code here:
-        manageEmployeeJButton.setForeground(new Color(188, 188, 188));
-        manageEmployeeJButton.setBackground(new Color(13, 17, 23));
+//        manageEmployeeJButton.setForeground(new Color(188, 188, 188));
+//        manageEmployeeJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_manageEmployeeJButtonMouseExited
 
     private void userJButtonFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_userJButtonFocusGained
         // TODO add your handling code here:
-        userJButton.setForeground(new Color(255, 255, 255));
-        userJButton.setBackground(new Color(144, 202, 249));
+//        userJButton.setForeground(new Color(255, 255, 255));
+//        userJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_userJButtonFocusGained
 
     private void userJButtonFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_userJButtonFocusLost
         // TODO add your handling code here:
-        userJButton.setForeground(new Color(188, 188, 188));
-        userJButton.setBackground(new Color(13, 17, 23));
+//        userJButton.setForeground(new Color(188, 188, 188));
+//        userJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_userJButtonFocusLost
 
     private void userJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userJButtonMouseExited
         // TODO add your handling code here:
-        userJButton.setForeground(new Color(188, 188, 188));
-        userJButton.setBackground(new Color(13, 17, 23));
+//        userJButton.setForeground(new Color(188, 188, 188));
+//        userJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_userJButtonMouseExited
 
     private void userJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userJButtonMouseEntered
         // TODO add your handling code here:
-        userJButton.setForeground(new Color(255, 255, 255));
-        userJButton.setBackground(new Color(144, 202, 249));
+//        userJButton.setForeground(new Color(255, 255, 255));
+//        userJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_userJButtonMouseEntered
 
     private void btnRequestFundsFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnRequestFundsFocusGained
         // TODO add your handling code here:
-        btnRequestFunds.setForeground(new Color(255, 255, 255));
-        btnRequestFunds.setBackground(new Color(144, 202, 249));
+//        btnRequestFunds.setForeground(new Color(255, 255, 255));
+//        btnRequestFunds.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnRequestFundsFocusGained
 
     private void btnRequestFundsFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnRequestFundsFocusLost
         // TODO add your handling code here:
-        btnRequestFunds.setForeground(new Color(188, 188, 188));
-        btnRequestFunds.setBackground(new Color(13, 17, 23));
+//        btnRequestFunds.setForeground(new Color(188, 188, 188));
+//        btnRequestFunds.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnRequestFundsFocusLost
 
     private void btnRequestFundsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRequestFundsMouseEntered
         // TODO add your handling code here:
-        btnRequestFunds.setForeground(new Color(255, 255, 255));
-        btnRequestFunds.setBackground(new Color(144, 202, 249));
+//        btnRequestFunds.setForeground(new Color(255, 255, 255));
+//        btnRequestFunds.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnRequestFundsMouseEntered
 
     private void btnRequestFundsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRequestFundsMouseExited
         // TODO add your handling code here:
-        btnRequestFunds.setForeground(new Color(188, 188, 188));
-        btnRequestFunds.setBackground(new Color(13, 17, 23));
+//        btnRequestFunds.setForeground(new Color(188, 188, 188));
+//        btnRequestFunds.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnRequestFundsMouseExited
 
 
@@ -463,7 +421,6 @@ public class EnterpriseAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnRequestFunds;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
