@@ -83,7 +83,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(207, 207, 207));
-        setForeground(new java.awt.Color(255, 255, 255));
         setEnabled(false);
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -189,7 +188,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
         });
 
         medicinejTable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        medicinejTable.setForeground(new java.awt.Color(188, 188, 188));
         medicinejTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -227,7 +225,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
 
         txtPrescription.setColumns(20);
         txtPrescription.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        txtPrescription.setForeground(new java.awt.Color(188, 188, 188));
         txtPrescription.setRows(5);
         jScrollPane1.setViewportView(txtPrescription);
 

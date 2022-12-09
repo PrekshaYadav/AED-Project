@@ -67,7 +67,6 @@ public class AuditorWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(207, 207, 207));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        workRequestJTable.setBackground(null);
         workRequestJTable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -99,7 +98,6 @@ public class AuditorWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 1120, 450));
 
-        btnLogoutPatient.setBackground(null);
         btnLogoutPatient.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnLogoutPatient.setText("Logout");
         btnLogoutPatient.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -117,28 +115,23 @@ public class AuditorWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(btnLogoutPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 10, -1, 32));
 
-        jLabel5.setBackground(null);
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel5.setText("GOVERNMENT AUDITOR WORK AREA");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 6, 410, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(188, 188, 188));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Insurance Work Queue");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(928, 79, 228, 30));
 
         enterpriseLabel.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(188, 188, 188));
         enterpriseLabel.setText("Enterprise :");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 79, -1, 30));
 
         valueLabel.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        valueLabel.setForeground(new java.awt.Color(188, 188, 188));
         valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 79, 158, 30));
 
-        btnAssign.setBackground(null);
         btnAssign.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnAssign.setText("Assign To Me");
         btnAssign.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -156,7 +149,6 @@ public class AuditorWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(btnAssign, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 580, 157, 32));
 
-        processRequestBtn.setBackground(null);
         processRequestBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         processRequestBtn.setText("Process Request");
         processRequestBtn.addMouseListener(new java.awt.event.MouseAdapter() {
