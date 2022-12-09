@@ -226,6 +226,7 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
         txtPrescription.setColumns(20);
         txtPrescription.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         txtPrescription.setRows(5);
+        txtPrescription.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jScrollPane1.setViewportView(txtPrescription);
 
         btnSubmit.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N

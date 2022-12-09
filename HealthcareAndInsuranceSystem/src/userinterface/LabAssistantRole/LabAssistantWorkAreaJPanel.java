@@ -82,7 +82,6 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         workRequestJTable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        workRequestJTable.setForeground(new java.awt.Color(188, 188, 188));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -207,14 +206,14 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
 
     private void assignJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_assignJButtonMouseEntered
         // TODO add your handling code here:
-        assignJButton.setForeground(new Color(0,0,0));
-        assignJButton.setBackground(new Color(144,202,249));
+//        assignJButton.setForeground(new Color(0,0,0));
+//        assignJButton.setBackground(new Color(144,202,249));
     }//GEN-LAST:event_assignJButtonMouseEntered
 
     private void assignJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_assignJButtonMouseExited
         // TODO add your handling code here:
-        assignJButton.setForeground(new Color(188,188,188));
-        assignJButton.setBackground(new Color(13,17,23));
+//        assignJButton.setForeground(new Color(188,188,188));
+//        assignJButton.setBackground(new Color(13,17,23));
     }//GEN-LAST:event_assignJButtonMouseExited
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
@@ -247,8 +246,8 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
 
     private void processJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_processJButtonMouseEntered
         // TODO add your handling code here:
-        processJButton.setForeground(new Color(0,0,0));
-        processJButton.setBackground(new Color(144,202,249));
+//        processJButton.setForeground(new Color(0,0,0));
+//        processJButton.setBackground(new Color(144,202,249));
     }//GEN-LAST:event_processJButtonMouseEntered
 
     private void processJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_processJButtonMouseExited
