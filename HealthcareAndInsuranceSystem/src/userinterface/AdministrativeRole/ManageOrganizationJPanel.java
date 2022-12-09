@@ -20,7 +20,7 @@ import javax.swing.table.TableRowSorter;
 
 /**
  *
- * @author Sumit
+ * 
  */
 public class ManageOrganizationJPanel extends javax.swing.JPanel {
 
@@ -86,15 +86,12 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         organizationJTable = new javax.swing.JTable();
         organizationJComboBox = new javax.swing.JComboBox();
         btnDeleteOrg = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(13, 17, 23));
+        setBackground(new java.awt.Color(207, 207, 207));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        backJButton.setBackground(new java.awt.Color(13, 17, 23));
         backJButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        backJButton.setForeground(new java.awt.Color(188, 188, 188));
         backJButton.setText("Back");
         backJButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -111,16 +108,13 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 6, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(22, 27, 34));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(188, 188, 188));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("MANAGE ORGANIZATIONS");
 
-        btnAddOrg.setBackground(new java.awt.Color(22, 27, 34));
         btnAddOrg.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnAddOrg.setForeground(new java.awt.Color(188, 188, 188));
         btnAddOrg.setText("Add Organization");
         btnAddOrg.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -145,17 +139,13 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         });
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(188, 188, 188));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("You can manage organizations below.");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(188, 188, 188));
         jLabel10.setText("Organization Type:");
 
-        organizationJTable.setBackground(new java.awt.Color(22, 27, 34));
         organizationJTable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        organizationJTable.setForeground(new java.awt.Color(188, 188, 188));
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -188,9 +178,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         organizationJComboBox.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        btnDeleteOrg.setBackground(new java.awt.Color(22, 27, 34));
         btnDeleteOrg.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnDeleteOrg.setForeground(new java.awt.Color(188, 188, 188));
         btnDeleteOrg.setText("Delete Organization");
         btnDeleteOrg.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -263,34 +251,20 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 420, 550));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("<> with ♡ by Team Batman");
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel4MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel4MouseExited(evt);
-            }
-        });
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 705, 282, -1));
-
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/Credit card.gif"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, 500, 500));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseEntered
         // TODO add your handling code here:
-        backJButton.setForeground(new Color(0, 0, 0));
-        backJButton.setBackground(new Color(144, 202, 249));
+//        backJButton.setForeground(new Color(0, 0, 0));
+//        backJButton.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_backJButtonMouseEntered
 
     private void backJButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backJButtonMouseExited
         // TODO add your handling code here:
-        backJButton.setForeground(new Color(188, 188, 188));
-        backJButton.setBackground(new Color(13, 17, 23));
+//        backJButton.setForeground(new Color(188, 188, 188));
+//        backJButton.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_backJButtonMouseExited
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -305,26 +279,26 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
 
     private void btnAddOrgFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnAddOrgFocusGained
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(255, 255, 255));
-        btnAddOrg.setBackground(new Color(144, 202, 249));
+//        btnAddOrg.setForeground(new Color(255, 255, 255));
+//        btnAddOrg.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnAddOrgFocusGained
 
     private void btnAddOrgFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnAddOrgFocusLost
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(188, 188, 188));
-        btnAddOrg.setBackground(new Color(13, 17, 23));
+//        btnAddOrg.setForeground(new Color(188, 188, 188));
+//        btnAddOrg.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnAddOrgFocusLost
 
     private void btnAddOrgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddOrgMouseEntered
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(255, 255, 255));
-        btnAddOrg.setBackground(new Color(144, 202, 249));
+//        btnAddOrg.setForeground(new Color(255, 255, 255));
+//        btnAddOrg.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnAddOrgMouseEntered
 
     private void btnAddOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddOrgMouseExited
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(188, 188, 188));
-        btnAddOrg.setBackground(new Color(13, 17, 23));
+//        btnAddOrg.setForeground(new Color(188, 188, 188));
+//        btnAddOrg.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnAddOrgMouseExited
 
     private void btnAddOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddOrgActionPerformed
@@ -348,40 +322,28 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_btnAddOrgActionPerformed
 
-    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
-        // TODO add your handling code here:
-
-        jLabel4.setFont(new Font(jLabel4.getFont().getName(), Font.PLAIN, 19));
-    }//GEN-LAST:event_jLabel4MouseEntered
-
-    private void jLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseExited
-        // TODO add your handling code here:
-
-        jLabel4.setFont(new Font(jLabel4.getFont().getName(), Font.PLAIN, 18));
-    }//GEN-LAST:event_jLabel4MouseExited
-
     private void btnDeleteOrgFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnDeleteOrgFocusGained
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(255, 255, 255));
-        btnAddOrg.setBackground(new Color(144, 202, 249));
+//        btnAddOrg.setForeground(new Color(255, 255, 255));
+//        btnAddOrg.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnDeleteOrgFocusGained
 
     private void btnDeleteOrgFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_btnDeleteOrgFocusLost
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(188, 188, 188));
-        btnAddOrg.setBackground(new Color(13, 17, 23));
+//        btnAddOrg.setForeground(new Color(188, 188, 188));
+//        btnAddOrg.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnDeleteOrgFocusLost
 
     private void btnDeleteOrgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteOrgMouseEntered
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(255, 255, 255));
-        btnAddOrg.setBackground(new Color(144, 202, 249));
+//        btnAddOrg.setForeground(new Color(255, 255, 255));
+//        btnAddOrg.setBackground(new Color(144, 202, 249));
     }//GEN-LAST:event_btnDeleteOrgMouseEntered
 
     private void btnDeleteOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteOrgMouseExited
         // TODO add your handling code here:
-        btnAddOrg.setForeground(new Color(188, 188, 188));
-        btnAddOrg.setBackground(new Color(13, 17, 23));
+//        btnAddOrg.setForeground(new Color(188, 188, 188));
+//        btnAddOrg.setBackground(new Color(13, 17, 23));
     }//GEN-LAST:event_btnDeleteOrgMouseExited
 
     private void btnDeleteOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteOrgActionPerformed
@@ -405,7 +367,6 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnAddOrg;
     private javax.swing.JButton btnDeleteOrg;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
