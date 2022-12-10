@@ -1,6 +1,11 @@
 
 package userinterface.DoctorRole;
 
+import com.teamdev.jxbrowser.browser.Browser;
+import com.teamdev.jxbrowser.engine.Engine;
+import com.teamdev.jxbrowser.engine.EngineOptions;
+import com.teamdev.jxbrowser.view.swing.BrowserView;
+//import com.teamdev.jxbrowser.chromium.events.ConsoleListener;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Enterprise.PharmacyEnterprise;
@@ -11,15 +16,19 @@ import Business.Pharmacy.Medicine;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.MedicalDeliveryWorkRequest;
 import Business.WorkQueue.PatientTreatmentWorkRequest;
+import static com.teamdev.jxbrowser.engine.RenderingMode.HARDWARE_ACCELERATED;
+import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
 import java.util.HashMap;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -59,7 +68,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         backJButton = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -80,6 +88,7 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         txtPrescription = new javax.swing.JTextArea();
         btnSubmit = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(207, 207, 207));
@@ -102,20 +111,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
             }
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 6, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("<> with ♡ by Team Batman");
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel5MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel5MouseExited(evt);
-            }
-        });
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 705, 282, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -253,6 +248,13 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
             }
         });
 
+        jButton1.setText("View Nearest");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -302,8 +304,10 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(pharmacyjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtMedicalCondition1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(42, Short.MAX_VALUE))
+                                    .addComponent(txtMedicalCondition1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -329,7 +333,8 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pharmacyjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pharmacyjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(viewMedicines, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
@@ -493,18 +498,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
-    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
-        // TODO add your handling code here:
-
-        jLabel5.setFont(new Font(jLabel5.getFont().getName(), Font.PLAIN, 19));
-    }//GEN-LAST:event_jLabel5MouseEntered
-
-    private void jLabel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseExited
-        // TODO add your handling code here:
-
-        jLabel5.setFont(new Font(jLabel5.getFont().getName(), Font.PLAIN, 18));
-    }//GEN-LAST:event_jLabel5MouseExited
-
     private void viewMedicinesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_viewMedicinesMouseEntered
         // TODO add your handling code here:
 //        viewMedicines.setForeground(new Color(0, 0, 0));
@@ -577,11 +570,91 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
 //        btnSubmit.setBackground(new Color(22, 27, 34));
     }//GEN-LAST:event_btnSubmitFocusLost
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+         int MIN_ZOOM = 0;
+        int MAX_ZOOM = 21;
+//        String setMarkerScript1 =
+//            "var myLatlng = new google.maps.LatLngLiteral[] = [\n" +
+//                "  { lat: 52.511, lng: 13.447 },\n" +
+//                "  { lat: 52.549, lng: 13.422 },\n" +   
+//                "  { lat: 52.497, lng: 13.396 },\n" +
+//                "  { lat: 52.517, lng: 13.394 },\n" +
+//                "];\n" +
+//                    "var marker1 = new google.maps.Marker({\n" +
+//                    "    position: myLatlng,\n" +
+//                    "    map: map,\n" +
+//                    "    title: 'CVS'\n" +
+//                    "});"+
+//                "var marker2 = new google.maps.Marker({\n" +
+//                    "    position: {lat:42.34180338170278,lng:-71.08338275364531},\n" +
+//                    "    map: map,\n" +
+//                    "    title: 'Walgreens'\n" +
+//                    "});";
+//        String setMarkerScript2 =
+//            "var myLatlng = new google.maps.LatLng(42.34180338170278,-71.08338275364531);\n" +
+//                    "var marker = new google.maps.Marker({\n" +
+//                    "    position: myLatlng,\n" +
+//                    "    map: map,\n" +
+//                    "    title: 'Walgreens'\n" +
+//                    "});";
+     
+        EngineOptions options = EngineOptions.newBuilder(HARDWARE_ACCELERATED).licenseKey("1BNDHFSC1G4RKF66MXSFQUJZQ6CLBMPFDAY8UGDCCC1XKFIY9KN6DNN6JR0AXP4E2TNJ5I").build();
+        Engine engine = Engine.newInstance(options);
+        Browser browser = engine.newBrowser();
+
+         SwingUtilities.invokeLater(() -> {
+            BrowserView view = BrowserView.newInstance(browser);
+
+            //42.34180338170278, -71.08338275364531
+//            JButton zoomInButton = new JButton("Zoom In");
+//            zoomInButton.addActionListener(e -> {
+//                if (zoomValue < MAX_ZOOM) {
+//                    browser.mainFrame().ifPresent(frame ->
+//                            frame.executeJavaScript("map.setZoom(" +
+//                                    ++zoomValue + ")"));
+//                }
+//            });
+//
+//            JButton zoomOutButton = new JButton("Zoom Out");
+//            zoomOutButton.addActionListener(e -> {
+//                if (zoomValue > MIN_ZOOM) {
+//                    browser.mainFrame().ifPresent(frame ->
+//                            frame.executeJavaScript("map.setZoom(" +
+//                                    --zoomValue + ")"));
+//                }
+//            });
+
+//            JButton setMarkerButton = new JButton("Set Marker");
+//            setMarkerButton.addActionListener(e ->
+//                    browser.mainFrame().ifPresent(frame ->
+//                            frame.executeJavaScript(setMarkerScript1))
+//            );
+          
+
+            JPanel toolBar = new JPanel();
+//            toolBar.add(zoomInButton);
+//            toolBar.add(zoomOutButton);
+//            toolBar.add(setMarkerButton);
+
+            JFrame frame = new JFrame("Google Maps");
+            frame.add(toolBar, BorderLayout.SOUTH);
+            frame.add(view, BorderLayout.CENTER);
+            frame.setSize(800, 500);
+            frame.setVisible(true);
+
+//            browser.navigation().loadUrl("C://Users/Adhyantini/Documents/NetBeansProjects/AED-Project/AED-Project/HealthcareAndInsuranceSystem/maps/map.html");
+              browser.navigation().loadUrl("file:///C://Users/Adhyantini/Documents/NetBeansProjects/AED-Project/AED-Project/HealthcareAndInsuranceSystem/maps/map.html");
+            
+        });
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnSubmit;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel15;
@@ -589,7 +662,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
