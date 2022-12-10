@@ -385,6 +385,7 @@ public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Medicine Added", "Success", JOptionPane.INFORMATION_MESSAGE);
             medNameTxt.setText("");
             medPriceTxt.setText("");
+            this.enterprise.addMedicine(m);
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, "Medicine price has to be numeric", "Error", JOptionPane.ERROR_MESSAGE);
