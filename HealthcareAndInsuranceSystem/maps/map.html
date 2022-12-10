@@ -1,0 +1,162 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+   <style type="text/css">
+       html { height: 100% }
+       body { height: 100%; margin: 0; padding: 0 }
+       #map-canvas { height: 100% }
+   </style>
+   <script type="text/javascript"
+           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLTmOfWI5TRH5RHTzifNwu9ZIwDiuRVnc"></script>
+   <script type="text/javascript">
+     var map;
+     function initialize() {
+       var mapOptions = {
+         center: new google.maps.LatLng(42.3398,  -71.087913),
+         zoom: 4
+       };
+       map = new google.maps.Map(
+              document.getElementById("map-canvas"), mapOptions);
+     }
+     google.maps.event.addDomListener(window, 'load', initialize);
+
+   </script>
+</head>
+<body>
+<div id="map-canvas"></div>
+</body>
+</html> -->
+
+<html>
+  <head>
+    <title>Marker Animations With setTimeout()</title>
+    <style>
+        html { height: 100% }
+        body { height: 100%; margin: 0; padding: 0 }
+        #map-canvas { height: 100% }
+    </style>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLTmOfWI5TRH5RHTzifNwu9ZIwDiuRVnc"></script>
+    <script type="text/javascript">
+        const neighborhoods = [
+  { lat: 42.335625857185384, lng: -71.07386269997508 },
+  { lat: 42.33156134561381, lng: -71.09154336981109 },
+  { lat: 42.33953072872214, lng: -71.10663662454915 },
+  { lat: 42.361916536888295, lng: -71.07044077786674 },
+  {lat:42.33690585180845,lng:-71.03633125197204},
+  {lat:42.3517108679026 , lng:-71.07717311395787},
+  {lat:42.34934061334822,lng:-71.08283471514086},
+  {lat:42.34982140426035, lng:-71.07270573014685},
+  {lat: 42.34988235635337, lng: -71.08252014841169}
+];
+let markers = [];
+let titles = ['CVS', 'Walgreens', 'CVS', 'Fenway Health Pharmacy','Walgreens', 'Community', 'PharmaLuxe','Walgreens','CVS'];
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map-canvas"), {
+    zoom: 12,
+    center: { lat:42.3398,  lng:-71.087913 },
+  });
+  document.getElementById("drop").addEventListener("click", drop);
+}
+
+function drop() {
+  clearMarkers();
+
+
+    addMarkerWithTimeout();
+ 
+}
+
+function addMarkerWithTimeout(timeout) {
+  window.setTimeout(() => {
+    // markers.push(
+    //   new google.maps.Marker({
+    //     position: position,
+    //     title: title,
+    //     map,
+    //     animation: google.maps.Animation.DROP,
+    //   })
+    // );
+    markers=[ new google.maps.Marker({
+        position: neighborhoods[0],
+        title: titles[0],
+        map,
+        animation: google.maps.Animation.DROP,
+      }), new google.maps.Marker({
+        position: neighborhoods[1],
+        title: titles[1],
+        map,
+        animation: google.maps.Animation.DROP,
+      }), new google.maps.Marker({
+        position: neighborhoods[2],
+        title: titles[2],
+        map,
+        animation: google.maps.Animation.DROP,
+      }), new google.maps.Marker({
+        position: neighborhoods[3],
+        title: titles[3],
+        map,
+        animation: google.maps.Animation.DROP,
+      }),new google.maps.Marker({
+        position: neighborhoods[4],
+        title: titles[4],
+        map,
+        animation: google.maps.Animation.DROP,
+      }),new google.maps.Marker({
+        position: neighborhoods[5],
+        title: titles[5],
+        map,
+        animation: google.maps.Animation.DROP,
+      }),new google.maps.Marker({
+        position: neighborhoods[6],
+        title: titles[6],
+        map,
+        animation: google.maps.Animation.DROP,
+      }),new google.maps.Marker({
+        position: neighborhoods[7],
+        title: titles[7],
+        map,
+        animation: google.maps.Animation.DROP,
+      }),new google.maps.Marker({
+        position: neighborhoods[8],
+        title: titles[8],
+        map,
+        animation: google.maps.Animation.DROP,
+      })]
+  }, timeout);
+}
+
+function clearMarkers() {
+  for (let i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+
+  markers = [];
+}
+
+google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+    <!-- <script type="text/javascript">
+     var map;
+     function initialize() {
+       var mapOptions = {
+         center: new google.maps.LatLng(42.3398,  -71.087913),
+         zoom: 4
+       };
+       map = new google.maps.Map(
+              document.getElementById("map-canvas"), mapOptions);
+     }
+     google.maps.event.addDomListener(window, 'load', initialize);
+
+   </script> -->
+  </head>
+  <body>
+    <div id="floating-panel">
+      <button id="drop">Show Pharmacies</button>
+    </div>
+    <div id="map-canvas"></div>
+  </body>
+</html>

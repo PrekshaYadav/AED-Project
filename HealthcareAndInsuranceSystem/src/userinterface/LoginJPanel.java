@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Sumit
+ * 
  */
 public class LoginJPanel extends javax.swing.JPanel {
 

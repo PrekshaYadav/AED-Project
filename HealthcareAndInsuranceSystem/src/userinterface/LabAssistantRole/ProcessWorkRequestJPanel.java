@@ -16,7 +16,7 @@ import userinterface.DoctorRole.DoctorWorkAreaJPanel;
 
 /**
  *
- * @author Sumit
+ * 
  */
 public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 

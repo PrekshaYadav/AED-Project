@@ -18,7 +18,7 @@ import userinterface.HealthcareAccountantRole.EmailBillingInformationToPatient;
 
 /**
  *
- * @author Sumit & Chinmay
+ *
  */
 public class ManageNetworkJPanel extends javax.swing.JPanel {
 
