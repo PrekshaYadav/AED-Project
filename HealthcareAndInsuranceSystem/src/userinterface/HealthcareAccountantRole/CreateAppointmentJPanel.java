@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package userinterface.HealthcareAccountantRole;
-
+import com.twilio.Twilio;
+import com.twilio.rest.api.v2010.account.Message;
+import com.twilio.type.PhoneNumber;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Enterprise.HealthCenterEnterprise;
@@ -33,6 +35,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import userinterface.DoctorRole.DoctorWorkAreaJPanel;
 
+
+
+import java.net.URI;
+import java.util.Arrays;
 /**
  *
  * 
@@ -44,6 +50,8 @@ public class CreateAppointmentJPanel extends javax.swing.JPanel {
     private Enterprise enterprise;
     private EcoSystem ecosystem;
     private String patientId;
+    public static final String ACCOUNT_SID = "AC730b7609cbce35a7365a0c272e703012"; //Find your Account Sid and Auth Token at https://www.twilio.com/console
+    public static final String AUTH_TOKEN = "f1b860c6c6c4d41f52aaa8a8d285129c";
 
     CreateAppointmentJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, EcoSystem ecoSystem, String patientId) {
         initComponents();
@@ -694,6 +702,9 @@ public class CreateAppointmentJPanel extends javax.swing.JPanel {
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
 
+        System.out.println("calling ");
+        System.out.println(sendMessage());
+        System.out.println("return");
         if (txtFirstName.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(null, "First name cannot be empty", "Error", JOptionPane.ERROR_MESSAGE);
             return;
@@ -868,8 +879,32 @@ public class CreateAppointmentJPanel extends javax.swing.JPanel {
             }
 
         }
+        
     }//GEN-LAST:event_btnCreateActionPerformed
 
+    public String sendMessage()
+    
+    {   System.out.println("Send mess 1");
+        String messageBody = "Appointment data ";
+        //String to = jTextFieldTo.getText().toString();
+        String send = txtHomePhone.getText();
+
+        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+
+       //for(int i=0; i<to.length; i++)
+      
+//            Message message = Message.creator(
+//           new PhoneNumber("+14097105482"),                //Recipient(s)
+//            new PhoneNumber("+16506634959"),    //Sender Phone No. - Find your Twilio phone number at
+//            messageBody).create();
+             Message message = Message.creator(new PhoneNumber(send),
+        new PhoneNumber("+16506634959"), 
+        "Your appointment is confirment for 12th December 2022").create();
+             System.out.println("Send mess 2");
+        return message.getSid();     
+        
+    }
+    
     private void btnFindPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindPatientActionPerformed
 
         boolean isPatientFound = false;

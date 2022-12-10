@@ -14,10 +14,7 @@ import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.HealthcareAuditorRole.AuditorWorkAreaJPanel;
 
-/**
- *
- * 
- */
+
 public class GovernmentHealthAuditorRole extends Role {
 
     @Override
