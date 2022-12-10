@@ -68,7 +68,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         backJButton = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -112,20 +111,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
             }
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 6, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(188, 188, 188));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("<> with ♡ by Team Batman");
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel5MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel5MouseExited(evt);
-            }
-        });
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 705, 282, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -513,18 +498,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
-    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
-        // TODO add your handling code here:
-
-        jLabel5.setFont(new Font(jLabel5.getFont().getName(), Font.PLAIN, 19));
-    }//GEN-LAST:event_jLabel5MouseEntered
-
-    private void jLabel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseExited
-        // TODO add your handling code here:
-
-        jLabel5.setFont(new Font(jLabel5.getFont().getName(), Font.PLAIN, 18));
-    }//GEN-LAST:event_jLabel5MouseExited
-
     private void viewMedicinesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_viewMedicinesMouseEntered
         // TODO add your handling code here:
 //        viewMedicines.setForeground(new Color(0, 0, 0));
@@ -689,7 +662,6 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
