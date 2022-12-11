@@ -101,7 +101,6 @@ public class AllInsuranceRequestsJPanel extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setText("INSURANCE BROKER REQUEST AREA");
-        jLabel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 6, 490, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
