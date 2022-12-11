@@ -20,7 +20,7 @@ The Healthcare and Insurance Management Systems aims to ease the process of a pa
 * Once doctor assigns a bill to the patient, the Insurance Finance Manager can either reject or accept the claim
 
 ## Features
-* On creaton of patients, appointment, the patient reciveves an SMS confirming the appointment
+* On creaton of patients appointment, the patient recieves an SMS confirming the appointment
 * The doctor can view nearby pharmacies on maps and choose the pharmacy from where to prescribe medicines
 * On accepting the claim amount, the patient recieves an email from the Insurance company regarding information on the claim amount.
 
