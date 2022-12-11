@@ -4,8 +4,11 @@
  */
 package userinterface.AdministrativeRole;
 
+import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
+import Business.Enterprise.EnterpriseDirectory;
+import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.Organization.Organization.Type;
 import Business.Organization.PatientOrganization;
@@ -32,7 +35,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
     private JPanel container;
     private Enterprise enterprise;
-
+    private EcoSystem ecosystem;
     public ManageUserAccountJPanel(JPanel container, Enterprise enterprise) {
         initComponents();
         
@@ -46,6 +49,21 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         popOrganizationComboBox();
         popData();
     }
+    
+    public ManageUserAccountJPanel(JPanel container, Enterprise enterprise, EcoSystem ecosystem) {
+        initComponents();
+        
+        
+        ImageIcon icon = new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/User flow.gif"));
+        icon.getImage().flush();
+        jLabel5.setIcon(icon);
+        this.ecosystem = ecosystem;
+        this.enterprise = enterprise;
+        this.container = container;
+        popOrganizationComboBox();
+        popData();
+    }
+    
 
     public void popOrganizationComboBox() {
         organizationJComboBox.removeAllItems();
@@ -450,6 +468,26 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
             return;
         } else {
 
+            for(Network network : ecosystem.getNetworks())
+            {
+                for(Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList())
+                {
+                    for(Organization org: enterprise.getOrganizationDirectory().getOrganizations())
+                    {
+                        List<UserAccount> userAccountList = org.getUserAccountDirectory().getUserAccountList();
+                        for (UserAccount userAccount : userAccountList) {
+                            if (userAccount.getUsername().equals(userName)) {
+                                JOptionPane.showMessageDialog(null, "Username already exists", "Error", JOptionPane.ERROR_MESSAGE);
+                                nameJTextField.setBorder(BorderFactory.createLineBorder(Color.RED));
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+             
+            
+            
             List<UserAccount> userAccountList = organization.getUserAccountDirectory().getUserAccountList();
             for (UserAccount userAccount : userAccountList) {
                 if (userAccount.getUsername().equals(userName)) {
