@@ -44,7 +44,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         ImageIcon icon = new javax.swing.ImageIcon(getClass().getResource("/ImagesLatest/Coronavirus Delivery Preventions.gif"));
         icon.getImage().flush();
         jLabel5.setIcon(icon);
-
+        this.dB4OUtil = dB4OUtil;
         this.userProcessContainer = userProcessContainer;
         this.deliveryManOrganization = organization;
         this.enterprise = enterprise;
