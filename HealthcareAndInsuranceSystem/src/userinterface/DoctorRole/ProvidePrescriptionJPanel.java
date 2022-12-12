@@ -644,7 +644,7 @@ public class ProvidePrescriptionJPanel extends javax.swing.JPanel {
             frame.setVisible(true);
 
 //            browser.navigation().loadUrl("C://Users/Adhyantini/Documents/NetBeansProjects/AED-Project/AED-Project/HealthcareAndInsuranceSystem/maps/map.html");
-              browser.navigation().loadUrl("file:///C://Users/Adhyantini/Documents/NetBeansProjects/AED-Project/AED-Project/HealthcareAndInsuranceSystem/maps/map.html");
+              browser.navigation().loadUrl("file:///D:/MS-IS/AED/AED/FInal_Project/AED-Project/HealthcareAndInsuranceSystem/maps/map.html");
             
         });
     }//GEN-LAST:event_jButton1ActionPerformed
