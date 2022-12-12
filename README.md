@@ -1,6 +1,6 @@
 # AED-Project
 # Healthcare and Insurance Management System
-The Healthcare and Insurance Management Systems aims to ease the process of a patients visit to the Hospital by automating the whole system. After the patient's visit, the doctor can prescribe medicines to the patient via select pharamcies which is then delivered to the patients home. In case the patient has an insurance policy, the medical bill is automatically paid depending upon the covereage. Otherwise, the patient bears the bill. The Insurance Finance Manager has the ability to accept or reject the claim. 
+The Healthcare and Insurance Management System aims to ease the process of a patients visit to the Hospital by automating the whole system. After the patient's visit, the doctor can prescribe medicines to the patient via select pharamcies which is then delivered to the patients home. In case the patient has an insurance policy, the medical bill is automatically paid depending upon the covereage. Otherwise, the patient bears the bill. The Insurance Finance Manager has the ability to accept or reject the claim. 
 
 ## Flow / User Story
 * The system admin has the functionality to Add, View or remove admins of enterprises
@@ -26,7 +26,11 @@ The Healthcare and Insurance Management Systems aims to ease the process of a pa
 
 ## Class Diagram
 
+![Class Diagram](Images/UMl Diagram - Updated.jpg)
+
 ## Object Diagram
+
+![Object Diagram](Images/Object Diagram-Updated.jpg)
 
 ## Enterprises
 * Government Enterprise
