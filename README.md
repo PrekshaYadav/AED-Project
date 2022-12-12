@@ -26,11 +26,11 @@ The Healthcare and Insurance Management System aims to ease the process of a pat
 
 ## Class Diagram
 
-![Class Diagram](Images/UMl Diagram - Updated.jpg)
+![Class Diagram](Images/Class_diagram.jpg)
 
 ## Object Diagram
 
-![Object Diagram](Images/Object Diagram-Updated.jpg)
+![Object Diagram](Images/Object_diagram.jpg)
 
 ## Enterprises
 * Government Enterprise
